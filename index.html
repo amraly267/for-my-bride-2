@@ -1,0 +1,2694 @@
+<!DOCTYPE html>
+<html lang="ar" dir="auto">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>إلى عروستي ❤️</title>
+
+
+<style>
+
+/* =====================================================
+   GOOGLE FONTS
+===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =====================================================
+   BODY
+===================================================== */
+
+body {
+
+    min-height: 100vh;
+
+    overflow: hidden;
+
+    font-family: "Cairo", sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 50% 40%,
+            #4b1d2c 0%,
+            #211019 45%,
+            #09070a 100%
+        );
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+}
+
+
+/* =====================================================
+   BACKGROUND GLOW
+===================================================== */
+
+body::before {
+
+    content: "";
+
+    position: fixed;
+
+    width: 500px;
+    height: 500px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255,120,160,.12),
+            transparent 70%
+        );
+
+    pointer-events: none;
+}
+
+
+/* =====================================================
+   BACKGROUND HEARTS
+===================================================== */
+
+.bg-heart {
+
+    position: fixed;
+
+    color:
+        rgba(255,160,190,.07);
+
+    font-size: 80px;
+
+    pointer-events: none;
+
+    animation:
+        float 8s infinite ease-in-out;
+}
+
+.h1 {
+    left: 7%;
+    top: 12%;
+}
+
+.h2 {
+    right: 7%;
+    top: 22%;
+    animation-delay: 2s;
+}
+
+.h3 {
+    left: 17%;
+    bottom: 10%;
+    animation-delay: 4s;
+}
+
+.h4 {
+    right: 14%;
+    bottom: 7%;
+    animation-delay: 1s;
+}
+
+
+@keyframes float {
+
+    0%,100% {
+
+        transform:
+            translateY(0)
+            rotate(-10deg);
+    }
+
+    50% {
+
+        transform:
+            translateY(-25px)
+            rotate(10deg);
+    }
+}
+
+
+/* =====================================================
+   MAIN CONTAINER
+===================================================== */
+
+.container {
+
+    width: 92%;
+
+    max-width: 650px;
+
+    text-align: center;
+
+    position: relative;
+
+    z-index: 5;
+}
+
+
+/* =====================================================
+   INTRO
+===================================================== */
+
+.intro {
+
+    margin-bottom: 15px;
+
+    transition:
+        opacity .5s,
+        transform .5s;
+}
+
+
+.intro h1 {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 34px;
+
+    margin-bottom: 8px;
+}
+
+
+.intro p {
+
+    color: #e8b8c8;
+
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   ATTEMPT
+===================================================== */
+
+.attempt {
+
+    color: #d99bad;
+
+    font-size: 13px;
+
+    margin-bottom: 5px;
+}
+
+
+/* =====================================================
+   LOCK
+===================================================== */
+
+.lock-area {
+
+    position: relative;
+
+    height: 290px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.lock {
+
+    width: 145px;
+
+    height: 170px;
+
+    position: relative;
+
+    cursor: pointer;
+
+    user-select: none;
+
+    filter:
+        drop-shadow(
+            0 0 25px
+            rgba(255,70,120,.3)
+        );
+}
+
+
+.lock-body {
+
+    position: absolute;
+
+    bottom: 10px;
+
+    left: 10px;
+
+    width: 125px;
+
+    height: 105px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #e0b85e,
+            #8d5b18
+        );
+
+    border:
+        4px solid #f5d477;
+
+    box-shadow:
+
+        inset
+        0 5px 10px
+        rgba(255,255,255,.25),
+
+        0 15px 30px
+        rgba(0,0,0,.45);
+}
+
+
+.lock-body::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 25px;
+
+    height: 25px;
+
+    background: #3a2110;
+
+    border-radius: 50%;
+
+    top: 38px;
+
+    left: 46px;
+
+    box-shadow:
+        0 0 0 5px #d8ad58;
+}
+
+
+.lock-body::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 8px;
+
+    height: 25px;
+
+    background: #d8ad58;
+
+    left: 54px;
+
+    top: 58px;
+
+    border-radius: 5px;
+}
+
+
+.lock-shackle {
+
+    position: absolute;
+
+    width: 75px;
+
+    height: 80px;
+
+    border:
+        16px solid #d4a84f;
+
+    border-bottom: 0;
+
+    border-radius:
+        45px 45px 0 0;
+
+    top: 5px;
+
+    left: 35px;
+}
+
+
+/* =====================================================
+   LOCK SHAKE
+===================================================== */
+
+.shake {
+
+    animation:
+        shake .45s;
+}
+
+
+@keyframes shake {
+
+    0% {
+        transform:
+            translateX(0)
+            rotate(0);
+    }
+
+    15% {
+        transform:
+            translateX(-14px)
+            rotate(-6deg);
+    }
+
+    30% {
+        transform:
+            translateX(14px)
+            rotate(6deg);
+    }
+
+    45% {
+        transform:
+            translateX(-12px)
+            rotate(-5deg);
+    }
+
+    60% {
+        transform:
+            translateX(12px)
+            rotate(5deg);
+    }
+
+    75% {
+        transform:
+            translateX(-6px);
+    }
+
+    100% {
+        transform:
+            translateX(0)
+            rotate(0);
+    }
+}
+
+
+/* =====================================================
+   HINT
+===================================================== */
+
+.hint {
+
+    color: #f0c5d0;
+
+    font-size: 14px;
+
+    animation:
+        pulse 1.5s infinite;
+}
+
+
+@keyframes pulse {
+
+    50% {
+        opacity: .4;
+    }
+}
+
+
+/* =====================================================
+   COMEDY
+===================================================== */
+
+.comedy {
+
+    display: none;
+
+    margin-top: 10px;
+
+    padding: 18px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(255,255,255,.06);
+
+    border:
+        1px solid
+        rgba(255,255,255,.08);
+
+    animation:
+        appear .5s;
+}
+
+
+.comedy .emoji {
+
+    font-size: 38px;
+
+    display: block;
+
+    margin-bottom: 8px;
+}
+
+
+.comedy p {
+
+    color: #f0c5d0;
+
+    line-height: 1.8;
+
+    font-size: 15px;
+}
+
+
+.comedy button {
+
+    margin-top: 15px;
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.btn {
+
+    border:
+        1px solid
+        rgba(255,180,200,.45);
+
+    background:
+        linear-gradient(
+            135deg,
+            #8e284e,
+            #c24b70
+        );
+
+    color: white;
+
+    padding:
+        12px 24px;
+
+    border-radius: 50px;
+
+    font-family:
+        inherit;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 25px
+        rgba(0,0,0,.3);
+
+    transition:
+        .25s;
+}
+
+
+.btn:hover {
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 12px 30px
+        rgba(194,75,112,.35);
+}
+
+
+.btn:active {
+
+    transform:
+        scale(.95);
+}
+
+
+/* =====================================================
+   CARD AREA
+===================================================== */
+
+.card-wrapper {
+
+    display: none;
+
+    perspective: 1500px;
+
+    animation:
+        cardAppear 1s ease forwards;
+}
+
+
+@keyframes cardAppear {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(60px)
+            scale(.85);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+
+/* =====================================================
+   GREETING CARD
+===================================================== */
+
+.greeting-card {
+
+    width: 100%;
+
+    max-width: 580px;
+
+    min-height: 650px;
+
+    margin: auto;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 28px;
+
+    background:
+
+        radial-gradient(
+            circle at 50% 20%,
+            #fffdf8 0%,
+            #fff7ed 55%,
+            #f8e7d7 100%
+        );
+
+    color: #542b35;
+
+    border:
+        2px solid
+        #d5ad6d;
+
+    box-shadow:
+
+        0 30px 80px
+        rgba(0,0,0,.55),
+
+        inset
+        0 0 0 8px
+        rgba(213,173,109,.12);
+
+    padding:
+        35px 25px 28px;
+}
+
+
+/* =====================================================
+   CARD DECORATIONS
+===================================================== */
+
+.card-corner {
+
+    position: absolute;
+
+    font-size: 50px;
+
+    color: #c79652;
+
+    opacity: .5;
+}
+
+
+.corner-top-left {
+    top: 10px;
+    left: 15px;
+}
+
+.corner-top-right {
+    top: 10px;
+    right: 15px;
+}
+
+.corner-bottom-left {
+    bottom: 5px;
+    left: 15px;
+}
+
+.corner-bottom-right {
+    bottom: 5px;
+    right: 15px;
+}
+
+
+/* =====================================================
+   CARD HEADER
+===================================================== */
+
+.card-small-title {
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    color: #b28348;
+
+    margin-bottom: 5px;
+}
+
+
+.card-title {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 29px;
+
+    color: #7d3048;
+
+    margin-bottom: 4px;
+}
+
+
+.card-subtitle {
+
+    font-size: 13px;
+
+    color: #a87882;
+
+    margin-bottom: 5px;
+}
+
+
+/* =====================================================
+   DECORATIVE LINE
+===================================================== */
+
+.decor-line {
+
+    width: 120px;
+
+    height: 2px;
+
+    margin:
+        12px auto 8px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #c99b59,
+            transparent
+        );
+
+    position: relative;
+}
+
+
+.decor-line::after {
+
+    content: "♥";
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 50%;
+
+    transform:
+        translate(-50%,-50%);
+
+    background: #fff8ef;
+
+    color: #b35b72;
+
+    padding: 0 8px;
+
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   MAWLID BRIDE
+===================================================== */
+
+.mawlid-bride {
+
+    width: 230px;
+    height: 315px;
+
+    margin:
+        5px auto -5px;
+
+    position: relative;
+
+    animation:
+        brideFloat 3.5s ease-in-out infinite;
+
+    filter:
+        drop-shadow(
+            0 15px 15px
+            rgba(90,35,50,.15)
+        );
+}
+
+.bride-svg {
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    overflow: visible;
+}
+
+
+@keyframes brideFloat {
+
+    0%,100% {
+
+        transform:
+            translateY(0)
+            rotate(-1deg);
+    }
+
+    50% {
+
+        transform:
+            translateY(-8px)
+            rotate(1deg);
+    }
+}
+
+
+/* =====================================================
+   CROWN
+===================================================== */
+
+.bride-crown {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 69px;
+
+    z-index: 9;
+
+    font-size: 32px;
+
+    filter:
+        drop-shadow(
+            0 0 6px
+            rgba(255,190,60,.6)
+        );
+}
+
+
+/* =====================================================
+   HAIR
+===================================================== */
+
+.bride-hair {
+
+    position: absolute;
+
+    width: 82px;
+
+    height: 80px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #26171b,
+            #5a2a34
+        );
+
+    border-radius: 50%;
+
+    top: 19px;
+
+    left: 54px;
+
+    z-index: 3;
+}
+
+
+.bride-hair::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 28px;
+
+    height: 65px;
+
+    background: #29171c;
+
+    right: -11px;
+
+    top: 31px;
+
+    border-radius:
+        0 20px 20px 20px;
+}
+
+
+/* =====================================================
+   FACE
+===================================================== */
+
+.bride-head {
+
+    position: absolute;
+
+    width: 68px;
+
+    height: 72px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f9d4b7,
+            #efb893
+        );
+
+    border-radius: 50%;
+
+    top: 27px;
+
+    left: 61px;
+
+    z-index: 4;
+
+    border:
+        2px solid
+        rgba(80,30,30,.1);
+}
+
+
+.bride-eye {
+
+    position: absolute;
+
+    width: 6px;
+
+    height: 8px;
+
+    background: #351b22;
+
+    border-radius: 50%;
+
+    top: 48px;
+}
+
+
+.eye-left {
+    left: 17px;
+}
+
+
+.eye-right {
+    right: 17px;
+}
+
+
+.bride-smile {
+
+    position: absolute;
+
+    width: 20px;
+
+    height: 10px;
+
+    border-bottom:
+        3px solid #9e4058;
+
+    border-radius: 50%;
+
+    left: 24px;
+
+    top: 57px;
+}
+
+
+/* =====================================================
+   DRESS
+===================================================== */
+
+.bride-dress {
+
+    position: absolute;
+
+    width: 170px;
+
+    height: 150px;
+
+    left: 10px;
+
+    top: 91px;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            #9e2850,
+            #d95579 25%,
+            #f3a5b9 50%,
+            #d95579 75%,
+            #9e2850
+        );
+
+    clip-path:
+        polygon(
+            35% 0,
+            65% 0,
+            78% 16%,
+            100% 100%,
+            0 100%,
+            22% 16%
+        );
+
+    z-index: 2;
+
+    box-shadow:
+        0 12px 25px
+        rgba(100,30,50,.3);
+}
+
+
+/* Dress Details */
+
+.bride-dress::before {
+
+    content:
+        "✦  ✦  ✦";
+
+    position: absolute;
+
+    top: 50px;
+
+    width: 100%;
+
+    text-align: center;
+
+    color: #ffeab3;
+
+    font-size: 19px;
+
+    letter-spacing: 5px;
+}
+
+
+.bride-dress::after {
+
+    content: "";
+
+    position: absolute;
+
+    bottom: 14px;
+
+    left: 18px;
+
+    right: 18px;
+
+    height: 4px;
+
+    background:
+        #ffe5a7;
+
+    box-shadow:
+
+        0 -12px 0
+        rgba(255,230,170,.45),
+
+        0 12px 0
+        rgba(255,230,170,.45);
+}
+
+
+/* =====================================================
+   ARMS
+===================================================== */
+
+.bride-arm {
+
+    position: absolute;
+
+    width: 58px;
+
+    height: 18px;
+
+    background: #f6c7a8;
+
+    border-radius: 20px;
+
+    top: 118px;
+
+    z-index: 6;
+}
+
+
+.arm-left {
+
+    left: 0;
+
+    transform:
+        rotate(35deg);
+}
+
+
+.arm-right {
+
+    right: 0;
+
+    transform:
+        rotate(-35deg);
+}
+
+
+/* =====================================================
+   HEART
+===================================================== */
+
+.bride-heart {
+
+    position: absolute;
+
+    z-index: 10;
+
+    font-size: 30px;
+
+    top: 107px;
+
+    left: 81px;
+
+    animation:
+        heartPulse 1.4s infinite;
+}
+
+
+@keyframes heartPulse {
+
+    0%,100% {
+        transform:
+            scale(1);
+    }
+
+    50% {
+        transform:
+            scale(1.18);
+    }
+}
+
+
+/* =====================================================
+   BASE
+===================================================== */
+
+.bride-base {
+
+    position: absolute;
+
+    width: 140px;
+
+    height: 18px;
+
+    left: 25px;
+
+    bottom: 4px;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #9f6d20,
+            #e7c16a,
+            #9f6d20
+        );
+
+    box-shadow:
+        0 5px 15px
+        rgba(0,0,0,.25);
+}
+
+
+/* =====================================================
+   MESSAGE
+===================================================== */
+
+.main-message {
+
+    font-size: 23px;
+
+    line-height: 2;
+
+    color: #63313e;
+
+    margin-top: -2px;
+
+    margin-bottom: 10px;
+
+    transition:
+        opacity .25s,
+        transform .25s;
+}
+
+
+.translation {
+
+    font-size: 12px;
+
+    color: #b07c87;
+
+    margin-bottom: 15px;
+}
+
+
+/* =====================================================
+   LANGUAGE BUTTON
+===================================================== */
+
+.language-btn {
+
+    background:
+        transparent;
+
+    border:
+        1px solid
+        #c99b66;
+
+    color:
+        #8e4c5d;
+
+    padding:
+        9px 19px;
+
+    border-radius: 30px;
+
+    font-family:
+        inherit;
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+    transition: .25s;
+}
+
+
+.language-btn:hover {
+
+    background:
+        #8e4c5d;
+
+    color: white;
+
+    transform:
+        translateY(-2px);
+}
+
+
+/* =====================================================
+   CARD FOOTER
+===================================================== */
+
+.card-footer {
+
+    margin-top: 17px;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 15px;
+
+    color: #9e6671;
+}
+
+
+.card-footer span {
+
+    color: #b34d6c;
+}
+
+
+/* =====================================================
+   CARD FLOWERS
+===================================================== */
+
+.flower {
+
+    position: absolute;
+
+    color: #d69aab;
+
+    opacity: .5;
+
+    font-size: 25px;
+}
+
+
+.flower-1 {
+    left: 35px;
+    top: 180px;
+    transform: rotate(-20deg);
+}
+
+.flower-2 {
+    right: 35px;
+    top: 200px;
+    transform: rotate(20deg);
+}
+
+.flower-3 {
+    left: 55px;
+    bottom: 100px;
+    font-size: 18px;
+}
+
+.flower-4 {
+    right: 55px;
+    bottom: 110px;
+    font-size: 18px;
+}
+
+
+/* =====================================================
+   APPEAR
+===================================================== */
+
+@keyframes appear {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            scale(.85)
+            translateY(20px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            scale(1)
+            translateY(0);
+    }
+}
+
+
+/* =====================================================
+   BROKEN LOCK
+===================================================== */
+
+.broken .lock-shackle {
+
+    animation:
+        breakShackle .8s forwards;
+}
+
+
+.broken .lock-body {
+
+    animation:
+        breakBody .8s forwards;
+}
+
+
+@keyframes breakShackle {
+
+    0% {
+        transform:
+            rotate(0);
+    }
+
+    40% {
+        transform:
+            rotate(-10deg)
+            scale(1.1);
+    }
+
+    100% {
+
+        transform:
+            translate(-100px,-80px)
+            rotate(-45deg);
+
+        opacity: 0;
+    }
+}
+
+
+@keyframes breakBody {
+
+    0% {
+        transform:
+            scale(1);
+    }
+
+    30% {
+        transform:
+            scale(1.15);
+    }
+
+    100% {
+
+        transform:
+            translate(100px,80px)
+            rotate(35deg);
+
+        opacity: 0;
+    }
+}
+
+
+/* =====================================================
+   FLASH
+===================================================== */
+
+.flash {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: white;
+
+    z-index: 30;
+
+    pointer-events: none;
+
+    animation:
+        flash .5s forwards;
+}
+
+
+@keyframes flash {
+
+    0% {
+        opacity: .9;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* =====================================================
+   CONFETTI
+===================================================== */
+
+.confetti {
+
+    position: fixed;
+
+    width: 8px;
+
+    height: 14px;
+
+    top: -20px;
+
+    z-index: 20;
+
+    animation:
+        fall linear forwards;
+}
+
+
+@keyframes fall {
+
+    to {
+
+        transform:
+            translateY(110vh)
+            rotate(720deg);
+
+        opacity: 0;
+    }
+}
+
+
+/* =====================================================
+   HEARTS
+===================================================== */
+
+.flying-heart {
+
+    position: fixed;
+
+    pointer-events: none;
+
+    z-index: 15;
+
+    font-size: 25px;
+
+    animation:
+        flyHeart 2.5s ease-out forwards;
+}
+
+
+@keyframes flyHeart {
+
+    0% {
+
+        transform:
+            translate(0,0)
+            scale(.5);
+
+        opacity: 1;
+    }
+
+    100% {
+
+        transform:
+            translate(
+                calc((var(--x) - .5) * 500px),
+                -400px
+            )
+            scale(1.5);
+
+        opacity: 0;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:600px) {
+
+    .container {
+        width: 94%;
+    }
+
+
+    .intro h1 {
+        font-size: 27px;
+    }
+
+
+    .lock-area {
+        height: 270px;
+    }
+
+
+    .greeting-card {
+
+        min-height: 610px;
+
+        padding:
+            25px 15px 20px;
+
+        border-radius: 24px;
+    }
+
+
+    .card-title {
+        font-size: 25px;
+    }
+
+
+    .mawlid-bride {
+
+        width: 200px;
+        height: 285px;
+
+        margin-top: -5px;
+        margin-bottom: -10px;
+    }
+
+
+    .main-message {
+
+        font-size: 19px;
+
+        line-height: 1.9;
+    }
+
+
+    .flower {
+        display: none;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     BACKGROUND
+===================================================== -->
+
+<div class="bg-heart h1">♥</div>
+
+<div class="bg-heart h2">♥</div>
+
+<div class="bg-heart h3">♥</div>
+
+<div class="bg-heart h4">♥</div>
+
+
+<div class="container">
+
+
+<!-- =====================================================
+     INTRO
+===================================================== -->
+
+<div
+    class="intro"
+    id="intro"
+>
+
+    <h1>
+        في حاجة مستنياكي ❤️
+    </h1>
+
+    <p>
+        بس للأسف… مش هينفع أديهالك بسهولة 😜
+    </p>
+
+</div>
+
+
+<!-- =====================================================
+     ATTEMPT
+===================================================== -->
+
+<div
+    class="attempt"
+    id="attempt"
+>
+    المحاولة 1 من 3
+</div>
+
+
+<!-- =====================================================
+     LOCK
+===================================================== -->
+
+<div
+    class="lock-area"
+    id="lockArea"
+>
+
+    <div
+        class="lock"
+        id="lock"
+        onclick="hitLock()"
+    >
+
+        <div
+            class="lock-shackle"
+        ></div>
+
+        <div
+            class="lock-body"
+        ></div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     HINT
+===================================================== -->
+
+<div
+    class="hint"
+    id="hint"
+>
+    💥 دوسي على القفل جامد!
+</div>
+
+
+<!-- =====================================================
+     COMEDY
+===================================================== -->
+
+<div
+    class="comedy"
+    id="comedy"
+>
+
+    <span
+        class="emoji"
+        id="comedyEmoji"
+    >
+        😂
+    </span>
+
+
+    <p
+        id="comedyText"
+    ></p>
+
+
+    <button
+        class="btn"
+        onclick="nextAttempt()"
+        id="nextBtn"
+    >
+        أحاول تاني 😤
+    </button>
+
+</div>
+
+
+<!-- =====================================================
+     GREETING CARD
+===================================================== -->
+
+<div
+    class="card-wrapper"
+    id="cardWrapper"
+>
+
+    <div
+        class="greeting-card"
+    >
+
+
+        <!-- Corners -->
+
+        <div
+            class="card-corner corner-top-left"
+        >
+            ❦
+        </div>
+
+        <div
+            class="card-corner corner-top-right"
+        >
+            ❦
+        </div>
+
+        <div
+            class="card-corner corner-bottom-left"
+        >
+            ❦
+        </div>
+
+        <div
+            class="card-corner corner-bottom-right"
+        >
+            ❦
+        </div>
+
+
+        <!-- Flowers -->
+
+        <div class="flower flower-1">
+            ❀
+        </div>
+
+        <div class="flower flower-2">
+            ❀
+        </div>
+
+        <div class="flower flower-3">
+            ✿
+        </div>
+
+        <div class="flower flower-4">
+            ✿
+        </div>
+
+
+        <!-- Header -->
+
+        <div class="card-small-title">
+            A SPECIAL DAY
+        </div>
+
+
+        <div class="card-title">
+           A little surprise for you ❤️
+        </div>
+
+
+        <div class="card-subtitle">
+            To my bride
+        </div>
+
+
+        <div class="decor-line"></div>
+
+
+        <!-- =================================================
+             MAWLID BRIDE
+        ================================================== -->
+
+<div class="mawlid-bride">
+
+    <svg
+        viewBox="0 0 300 430"
+        xmlns="http://www.w3.org/2000/svg"
+        class="bride-svg"
+    >
+
+        <!-- Soft shadow -->
+        <ellipse
+            cx="150"
+            cy="410"
+            rx="95"
+            ry="14"
+            fill="rgba(75,35,45,.15)"
+        />
+
+        <!-- Dress outer silhouette -->
+        <path
+            d="
+            M112 205
+            C88 235 62 295 28 395
+            C24 407 36 414 52 414
+            L248 414
+            C264 414 276 407 272 395
+            C238 295 212 235 188 205
+            Z
+            "
+            fill="#9d3154"
+        />
+
+        <!-- Dress inner -->
+        <path
+            d="
+            M128 205
+            C112 250 94 310 70 394
+            L230 394
+            C206 310 188 250 172 205
+            Z
+            "
+            fill="#d95d7b"
+        />
+
+        <!-- Dress highlight -->
+        <path
+            d="
+            M150 208
+            C140 270 138 330 137 397
+            L163 397
+            C162 330 160 270 150 208
+            Z
+            "
+            fill="#f6b3c2"
+            opacity=".8"
+        />
+
+        <!-- Gold dress decoration -->
+        <path
+            d="
+            M80 335
+            Q150 365 220 335
+            "
+            fill="none"
+            stroke="#f4d47d"
+            stroke-width="7"
+        />
+
+        <path
+            d="
+            M58 380
+            Q150 407 242 380
+            "
+            fill="none"
+            stroke="#f4d47d"
+            stroke-width="7"
+        />
+
+        <!-- Golden ornaments -->
+        <g
+            fill="#f8d77d"
+            opacity=".95"
+        >
+
+            <circle cx="100" cy="290" r="5"/>
+            <circle cx="150" cy="300" r="6"/>
+            <circle cx="200" cy="290" r="5"/>
+
+            <circle cx="85" cy="350" r="5"/>
+            <circle cx="115" cy="360" r="4"/>
+            <circle cx="150" cy="365" r="5"/>
+            <circle cx="185" cy="360" r="4"/>
+            <circle cx="215" cy="350" r="5"/>
+
+        </g>
+
+
+        <!-- Neck -->
+        <rect
+            x="136"
+            y="174"
+            width="28"
+            height="40"
+            rx="12"
+            fill="#f2c29f"
+        />
+
+
+        <!-- Hair behind head -->
+        <path
+            d="
+            M95 95
+            C90 45 120 22 150 22
+            C180 22 210 45 205 95
+            L205 170
+            C195 198 180 207 150 207
+            C120 207 105 198 95 170
+            Z
+            "
+            fill="#3a2027"
+        />
+
+
+        <!-- Face -->
+        <ellipse
+            cx="150"
+            cy="125"
+            rx="57"
+            ry="67"
+            fill="#f6c8a8"
+        />
+
+
+        <!-- Hair top -->
+        <path
+            d="
+            M97 112
+            C92 55 120 35 150 35
+            C180 35 208 55 203 112
+            C190 88 175 77 150 77
+            C125 77 110 88 97 112
+            Z
+            "
+            fill="#43232b"
+        />
+
+
+        <!-- Eyes -->
+        <ellipse
+            cx="128"
+            cy="126"
+            rx="6"
+            ry="9"
+            fill="#352027"
+        />
+
+        <ellipse
+            cx="172"
+            cy="126"
+            rx="6"
+            ry="9"
+            fill="#352027"
+        />
+
+
+        <!-- Eye highlights -->
+        <circle
+            cx="130"
+            cy="123"
+            r="2"
+            fill="white"
+        />
+
+        <circle
+            cx="174"
+            cy="123"
+            r="2"
+            fill="white"
+        />
+
+
+        <!-- Nose -->
+        <path
+            d="
+            M150 130
+            Q145 145 151 148
+            "
+            fill="none"
+            stroke="#d5957b"
+            stroke-width="3"
+            stroke-linecap="round"
+        />
+
+
+        <!-- Smile -->
+        <path
+            d="
+            M136 157
+            Q150 168 164 157
+            "
+            fill="none"
+            stroke="#a8455b"
+            stroke-width="4"
+            stroke-linecap="round"
+        />
+
+
+        <!-- Earrings -->
+        <circle
+            cx="95"
+            cy="142"
+            r="9"
+            fill="#f5ce6c"
+        />
+
+        <circle
+            cx="205"
+            cy="142"
+            r="9"
+            fill="#f5ce6c"
+        />
+
+
+        <!-- Crown / traditional headpiece -->
+        <path
+            d="
+            M91 73
+            L105 22
+            L125 48
+            L150 10
+            L175 48
+            L195 22
+            L209 73
+            Z
+            "
+            fill="#d7a63d"
+            stroke="#f8dc85"
+            stroke-width="5"
+        />
+
+        <!-- Crown jewels -->
+        <circle
+            cx="150"
+            cy="34"
+            r="7"
+            fill="#b33d61"
+        />
+
+        <circle
+            cx="110"
+            cy="48"
+            r="5"
+            fill="#b33d61"
+        />
+
+        <circle
+            cx="190"
+            cy="48"
+            r="5"
+            fill="#b33d61"
+        />
+
+
+        <!-- Necklace -->
+        <path
+            d="
+            M116 181
+            Q150 207 184 181
+            "
+            fill="none"
+            stroke="#f5cf70"
+            stroke-width="6"
+        />
+
+        <circle
+            cx="150"
+            cy="198"
+            r="8"
+            fill="#c34664"
+        />
+
+
+        <!-- Left arm -->
+        <path
+            d="
+            M105 220
+            C70 235 63 270 80 286
+            "
+            fill="none"
+            stroke="#f2c29f"
+            stroke-width="18"
+            stroke-linecap="round"
+        />
+
+
+        <!-- Right arm -->
+        <path
+            d="
+            M195 220
+            C230 235 237 270 220 286
+            "
+            fill="none"
+            stroke="#f2c29f"
+            stroke-width="18"
+            stroke-linecap="round"
+        />
+
+
+        <!-- Heart -->
+        <path
+            d="
+            M150 272
+            C125 245 91 267 101 294
+            C108 313 130 327 150 341
+            C170 327 192 313 199 294
+            C209 267 175 245 150 272
+            Z
+            "
+            fill="#c43e62"
+        />
+
+        <!-- Heart shine -->
+        <path
+            d="
+            M121 280
+            Q127 270 138 274
+            "
+            fill="none"
+            stroke="#f8b8c7"
+            stroke-width="5"
+            stroke-linecap="round"
+        />
+
+
+        <!-- Dress stars -->
+        <g
+            fill="#fff0bb"
+            font-family="serif"
+            text-anchor="middle"
+        >
+
+            <text
+                x="105"
+                y="325"
+                font-size="22"
+            >
+                ✦
+            </text>
+
+            <text
+                x="150"
+                y="350"
+                font-size="25"
+            >
+                ✦
+            </text>
+
+            <text
+                x="195"
+                y="325"
+                font-size="22"
+            >
+                ✦
+            </text>
+
+        </g>
+
+    </svg>
+
+</div>
+
+
+        <!-- =================================================
+             MESSAGE
+        ================================================== -->
+
+        <div
+            class="main-message"
+            id="mainMessage"
+            dir="ltr"
+        >
+
+            운명은 나를 너와 만나게 했고
+            너는 내 인생에서 가장 아름다운 운명이 되었어 ❤️
+
+            <br>
+
+            생일 축하해, 언제나 나의 신부가 되어줘 🥰
+
+        </div>
+
+
+        <div
+            class="translation"
+            id="translation"
+        ></div>
+
+
+        <!-- Language Button -->
+
+        <button
+            class="language-btn"
+            id="languageBtn"
+            onclick="toggleLanguage()"
+        >
+            اضغطي هنا لو مش فاهمة بالكوري 😂
+        </button>
+
+
+        <!-- Footer -->
+
+
+
+    </div>
+
+</div>
+
+
+</div>
+
+
+<script>
+
+/* =====================================================
+   VARIABLES
+===================================================== */
+
+let attempt = 1;
+
+let locked = false;
+
+let korean = true;
+
+
+/* =====================================================
+   ELEMENTS
+===================================================== */
+
+const lock =
+    document.getElementById("lock");
+
+const comedy =
+    document.getElementById("comedy");
+
+const comedyText =
+    document.getElementById("comedyText");
+
+const comedyEmoji =
+    document.getElementById("comedyEmoji");
+
+const attemptText =
+    document.getElementById("attempt");
+
+const hint =
+    document.getElementById("hint");
+
+const lockArea =
+    document.getElementById("lockArea");
+
+const intro =
+    document.getElementById("intro");
+
+const cardWrapper =
+    document.getElementById("cardWrapper");
+
+const mainMessage =
+    document.getElementById("mainMessage");
+
+const translation =
+    document.getElementById("translation");
+
+const languageBtn =
+    document.getElementById("languageBtn");
+
+
+/* =====================================================
+   HIT LOCK
+===================================================== */
+
+function hitLock() {
+
+    if (locked)
+        return;
+
+
+    locked = true;
+
+
+    /* Restart Shake */
+
+    lock.classList.remove(
+        "shake"
+    );
+
+    void lock.offsetWidth;
+
+    lock.classList.add(
+        "shake"
+    );
+
+
+    setTimeout(() => {
+
+
+        /* ==============================================
+           FIRST ATTEMPT
+        ============================================== */
+
+        if (attempt === 1) {
+
+            showComedy(
+
+                "😂",
+
+                `
+                إيه ده؟! 😭<br>
+                دي كانت محاولة ولا بتطبطبي عليه؟ 😂<br>
+                القفل حتى محسش بحاجة!
+                `
+
+            );
+
+        }
+
+
+        /* ==============================================
+           SECOND ATTEMPT
+        ============================================== */
+
+        else if (attempt === 2) {
+
+            showComedy(
+
+                "😭💪",
+
+                `
+                لا لا لا… كده الموضوع خطر 😂<br>
+                شكلك مش بتاكلي كويس خالص!<br>
+                فين القوة يا بنتي؟ 😭💪
+                `
+
+            );
+
+        }
+
+
+        /* ==============================================
+           THIRD ATTEMPT
+        ============================================== */
+
+        else {
+
+            breakLock();
+
+        }
+
+    }, 500);
+
+}
+
+
+/* =====================================================
+   COMEDY
+===================================================== */
+
+function showComedy(
+    emoji,
+    text
+) {
+
+    comedyEmoji.innerHTML =
+        emoji;
+
+    comedyText.innerHTML =
+        text;
+
+    comedy.style.display =
+        "block";
+
+    hint.style.display =
+        "none";
+}
+
+
+/* =====================================================
+   NEXT ATTEMPT
+===================================================== */
+
+function nextAttempt() {
+
+    attempt++;
+
+
+    comedy.style.display =
+        "none";
+
+
+    attemptText.innerText =
+        "المحاولة " +
+        attempt +
+        " من 3";
+
+
+    hint.style.display =
+        "block";
+
+
+    locked = false;
+
+
+    if (attempt === 2) {
+
+        hint.innerHTML =
+            "💥 المرة دي دوسي أقوى!";
+
+    }
+
+
+    if (attempt === 3) {
+
+        hint.innerHTML =
+            "💣 آخر فرصة… فجّريه يا ريم!";
+
+    }
+
+}
+
+
+/* =====================================================
+   BREAK LOCK
+===================================================== */
+
+function breakLock() {
+
+    locked = true;
+
+
+    /* Flash */
+
+    const flash =
+        document.createElement(
+            "div"
+        );
+
+    flash.className =
+        "flash";
+
+    document.body.appendChild(
+        flash
+    );
+
+
+    /* Break Lock */
+
+    lockArea.classList.add(
+        "broken"
+    );
+
+
+    hint.style.display =
+        "none";
+
+
+    attemptText.style.display =
+        "none";
+
+
+    intro.style.display =
+        "none";
+
+
+    comedy.style.display =
+        "none";
+
+
+    /* Effects */
+
+    createConfetti();
+
+    createHearts();
+
+
+    /* Show Card */
+
+    setTimeout(() => {
+
+        lockArea.style.display =
+            "none";
+
+        cardWrapper.style.display =
+            "block";
+
+    }, 850);
+
+}
+
+
+/* =====================================================
+   CONFETTI
+===================================================== */
+
+function createConfetti() {
+
+    for (
+        let i = 0;
+        i < 120;
+        i++
+    ) {
+
+        const confetti =
+            document.createElement(
+                "div"
+            );
+
+
+        confetti.className =
+            "confetti";
+
+
+        confetti.style.left =
+            Math.random() * 100 +
+            "vw";
+
+
+        confetti.style.animationDuration =
+            (
+                2 +
+                Math.random() * 3
+            ) +
+            "s";
+
+
+        confetti.style.animationDelay =
+            Math.random() * 1.5 +
+            "s";
+
+
+        confetti.style.transform =
+            `rotate(
+                ${Math.random() * 360}deg
+            )`;
+
+
+        document.body.appendChild(
+            confetti
+        );
+
+
+        setTimeout(() => {
+
+            confetti.remove();
+
+        }, 6000);
+
+    }
+
+}
+
+
+/* =====================================================
+   HEARTS
+===================================================== */
+
+function createHearts() {
+
+    const hearts = [
+
+        "❤️",
+        "💗",
+        "💖",
+        "💕",
+        "💞",
+        "✨"
+
+    ];
+
+
+    for (
+        let i = 0;
+        i < 45;
+        i++
+    ) {
+
+        const heart =
+            document.createElement(
+                "div"
+            );
+
+
+        heart.className =
+            "flying-heart";
+
+
+        heart.innerHTML =
+            hearts[
+                Math.floor(
+                    Math.random() *
+                    hearts.length
+                )
+            ];
+
+
+        heart.style.left =
+            "50%";
+
+
+        heart.style.top =
+            "50%";
+
+
+        heart.style.setProperty(
+            "--x",
+            Math.random()
+        );
+
+
+        heart.style.animationDelay =
+            Math.random() * .8 +
+            "s";
+
+
+        document.body.appendChild(
+            heart
+        );
+
+
+        setTimeout(() => {
+
+            heart.remove();
+
+        }, 3500);
+
+    }
+
+}
+
+
+/* =====================================================
+   LANGUAGE TOGGLE
+===================================================== */
+
+function toggleLanguage() {
+
+    korean = !korean;
+
+
+    /* ==============================================
+       KOREAN
+    ============================================== */
+
+    if (korean) {
+
+        mainMessage.innerHTML = `
+
+            운명은 나를 너와 만나게 했고
+            너는 내 인생에서 가장 아름다운 운명이 되었어 ❤️
+
+            <br>
+
+            생일 축하해, 언제나 나의 신부가 되어줘 🥰
+
+        `;
+
+
+        mainMessage.setAttribute(
+            "dir",
+            "ltr"
+        );
+
+
+        translation.innerHTML =
+            "";
+
+
+        languageBtn.innerHTML =
+            "اضغطي هنا لو مش فاهمة بالكوري 😂";
+
+    }
+
+
+    /* ==============================================
+       ARABIC
+    ============================================== */
+
+    else {
+
+        mainMessage.innerHTML = `
+
+            جمعني القدر بكِ فكنتِ أجمل أقداري ❤️
+
+            <br>
+
+            كل مولد وأنتِ عروستي 🥰
+
+        `;
+
+
+        mainMessage.setAttribute(
+            "dir",
+            "rtl"
+        );
+
+
+
+        languageBtn.innerHTML =
+            "نرجع للكوري تاني 🇰🇷😂";
+
+    }
+
+}
+
+</script>
+
+</body>
+
+</html>
