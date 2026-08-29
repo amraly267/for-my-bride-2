@@ -1,170 +1,149 @@
 <!DOCTYPE html>
-<html lang="ar" dir="auto">
+
+<html lang="ar" dir="rtl">
 
 <head>
-
 <meta charset="UTF-8">
-
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>إلى عروستي ❤️</title>
 
-
 <style>
 
-/* =====================================================
-   GOOGLE FONTS
-===================================================== */
-
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
-
 
 /* =====================================================
    RESET
 ===================================================== */
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
 }
 
+html,
+body{
+    width:100%;
+    min-height:100%;
+}
 
-/* =====================================================
-   BODY
-===================================================== */
+body{
 
-body {
+    min-height:100vh;
 
-    min-height: 100vh;
+    overflow-x:hidden;
 
-    overflow: hidden;
+    font-family:"Cairo",sans-serif;
 
-    font-family: "Cairo", sans-serif;
+    color:white;
 
     background:
         radial-gradient(
-            circle at 50% 40%,
-            #4b1d2c 0%,
-            #211019 45%,
+            circle at 50% 35%,
+            #562132 0%,
+            #28121c 45%,
             #09070a 100%
         );
 
-    color: white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 
-    display: flex;
+    position:relative;
 
-    align-items: center;
-
-    justify-content: center;
-
-    position: relative;
+    padding:20px;
 }
 
 
 /* =====================================================
-   BACKGROUND GLOW
+   BACKGROUND
 ===================================================== */
 
-body::before {
+body::before{
 
-    content: "";
+    content:"";
 
-    position: fixed;
+    position:fixed;
 
-    width: 500px;
-    height: 500px;
+    width:600px;
+    height:600px;
 
-    border-radius: 50%;
+    border-radius:50%;
 
     background:
         radial-gradient(
             circle,
-            rgba(255,120,160,.12),
+            rgba(255,110,150,.12),
             transparent 70%
         );
 
-    pointer-events: none;
+    pointer-events:none;
 }
 
+.bg-heart{
 
-/* =====================================================
-   BACKGROUND HEARTS
-===================================================== */
+    position:fixed;
 
-.bg-heart {
+    color:rgba(255,160,190,.06);
 
-    position: fixed;
+    font-size:80px;
 
-    color:
-        rgba(255,160,190,.07);
+    pointer-events:none;
 
-    font-size: 80px;
-
-    pointer-events: none;
-
-    animation:
-        float 8s infinite ease-in-out;
+    animation:float 8s ease-in-out infinite;
 }
 
-.h1 {
-    left: 7%;
-    top: 12%;
+.h1{
+    left:6%;
+    top:10%;
 }
 
-.h2 {
-    right: 7%;
-    top: 22%;
-    animation-delay: 2s;
+.h2{
+    right:6%;
+    top:20%;
+    animation-delay:2s;
 }
 
-.h3 {
-    left: 17%;
-    bottom: 10%;
-    animation-delay: 4s;
+.h3{
+    left:15%;
+    bottom:8%;
+    animation-delay:4s;
 }
 
-.h4 {
-    right: 14%;
-    bottom: 7%;
-    animation-delay: 1s;
+.h4{
+    right:12%;
+    bottom:6%;
+    animation-delay:1s;
 }
 
+@keyframes float{
 
-@keyframes float {
-
-    0%,100% {
-
-        transform:
-            translateY(0)
-            rotate(-10deg);
+    0%,100%{
+        transform:translateY(0) rotate(-10deg);
     }
 
-    50% {
-
-        transform:
-            translateY(-25px)
-            rotate(10deg);
+    50%{
+        transform:translateY(-25px) rotate(10deg);
     }
 }
 
 
 /* =====================================================
-   MAIN CONTAINER
+   CONTAINER
 ===================================================== */
 
-.container {
+.container{
 
-    width: 92%;
+    width:100%;
 
-    max-width: 650px;
+    max-width:650px;
 
-    text-align: center;
+    position:relative;
 
-    position: relative;
+    z-index:5;
 
-    z-index: 5;
+    text-align:center;
 }
 
 
@@ -172,33 +151,27 @@ body::before {
    INTRO
 ===================================================== */
 
-.intro {
+.intro{
 
-    margin-bottom: 15px;
+    margin-bottom:15px;
 
-    transition:
-        opacity .5s,
-        transform .5s;
+    transition:.5s;
 }
 
+.intro h1{
 
-.intro h1 {
+    font-family:"Playfair Display",serif;
 
-    font-family:
-        "Playfair Display",
-        serif;
+    font-size:34px;
 
-    font-size: 34px;
-
-    margin-bottom: 8px;
+    margin-bottom:8px;
 }
 
+.intro p{
 
-.intro p {
+    color:#e8b8c8;
 
-    color: #e8b8c8;
-
-    font-size: 15px;
+    font-size:15px;
 }
 
 
@@ -206,13 +179,13 @@ body::before {
    ATTEMPT
 ===================================================== */
 
-.attempt {
+.attempt{
 
-    color: #d99bad;
+    color:#d99bad;
 
-    font-size: 13px;
+    font-size:13px;
 
-    margin-bottom: 5px;
+    margin-bottom:5px;
 }
 
 
@@ -220,31 +193,27 @@ body::before {
    LOCK
 ===================================================== */
 
-.lock-area {
+.lock-area{
 
-    position: relative;
+    height:280px;
 
-    height: 290px;
+    display:flex;
 
-    display: flex;
+    align-items:center;
 
-    align-items: center;
-
-    justify-content: center;
+    justify-content:center;
 }
 
+.lock{
 
-.lock {
+    width:145px;
+    height:170px;
 
-    width: 145px;
+    position:relative;
 
-    height: 170px;
+    cursor:pointer;
 
-    position: relative;
-
-    cursor: pointer;
-
-    user-select: none;
+    user-select:none;
 
     filter:
         drop-shadow(
@@ -253,20 +222,17 @@ body::before {
         );
 }
 
+.lock-body{
 
-.lock-body {
+    position:absolute;
 
-    position: absolute;
+    bottom:10px;
+    left:10px;
 
-    bottom: 10px;
+    width:125px;
+    height:105px;
 
-    left: 10px;
-
-    width: 125px;
-
-    height: 105px;
-
-    border-radius: 20px;
+    border-radius:20px;
 
     background:
         linear-gradient(
@@ -275,137 +241,104 @@ body::before {
             #8d5b18
         );
 
-    border:
-        4px solid #f5d477;
+    border:4px solid #f5d477;
 
     box-shadow:
-
-        inset
-        0 5px 10px
-        rgba(255,255,255,.25),
-
-        0 15px 30px
-        rgba(0,0,0,.45);
+        inset 0 5px 10px rgba(255,255,255,.25),
+        0 15px 30px rgba(0,0,0,.45);
 }
 
+.lock-body::before{
 
-.lock-body::before {
+    content:"";
 
-    content: "";
+    position:absolute;
 
-    position: absolute;
+    width:25px;
+    height:25px;
 
-    width: 25px;
+    background:#3a2110;
 
-    height: 25px;
+    border-radius:50%;
 
-    background: #3a2110;
-
-    border-radius: 50%;
-
-    top: 38px;
-
-    left: 46px;
+    top:38px;
+    left:46px;
 
     box-shadow:
         0 0 0 5px #d8ad58;
 }
 
+.lock-body::after{
 
-.lock-body::after {
+    content:"";
 
-    content: "";
+    position:absolute;
 
-    position: absolute;
+    width:8px;
+    height:25px;
 
-    width: 8px;
+    background:#d8ad58;
 
-    height: 25px;
+    left:54px;
+    top:58px;
 
-    background: #d8ad58;
-
-    left: 54px;
-
-    top: 58px;
-
-    border-radius: 5px;
+    border-radius:5px;
 }
 
+.lock-shackle{
 
-.lock-shackle {
+    position:absolute;
 
-    position: absolute;
+    width:75px;
+    height:80px;
 
-    width: 75px;
+    border:16px solid #d4a84f;
 
-    height: 80px;
+    border-bottom:0;
 
-    border:
-        16px solid #d4a84f;
+    border-radius:45px 45px 0 0;
 
-    border-bottom: 0;
-
-    border-radius:
-        45px 45px 0 0;
-
-    top: 5px;
-
-    left: 35px;
+    top:5px;
+    left:35px;
 }
 
 
 /* =====================================================
-   LOCK SHAKE
+   SHAKE
 ===================================================== */
 
-.shake {
-
-    animation:
-        shake .45s;
+.shake{
+    animation:shake .45s;
 }
 
+@keyframes shake{
 
-@keyframes shake {
-
-    0% {
-        transform:
-            translateX(0)
-            rotate(0);
+    0%{
+        transform:translateX(0) rotate(0);
     }
 
-    15% {
-        transform:
-            translateX(-14px)
-            rotate(-6deg);
+    15%{
+        transform:translateX(-14px) rotate(-6deg);
     }
 
-    30% {
-        transform:
-            translateX(14px)
-            rotate(6deg);
+    30%{
+        transform:translateX(14px) rotate(6deg);
     }
 
-    45% {
-        transform:
-            translateX(-12px)
-            rotate(-5deg);
+    45%{
+        transform:translateX(-12px) rotate(-5deg);
     }
 
-    60% {
-        transform:
-            translateX(12px)
-            rotate(5deg);
+    60%{
+        transform:translateX(12px) rotate(5deg);
     }
 
-    75% {
-        transform:
-            translateX(-6px);
+    75%{
+        transform:translateX(-6px);
     }
 
-    100% {
-        transform:
-            translateX(0)
-            rotate(0);
+    100%{
+        transform:translateX(0) rotate(0);
     }
 }
 
@@ -414,74 +347,130 @@ body::before {
    HINT
 ===================================================== */
 
-.hint {
+.hint{
 
-    color: #f0c5d0;
+    color:#f0c5d0;
 
-    font-size: 14px;
+    font-size:14px;
 
-    animation:
-        pulse 1.5s infinite;
+    animation:pulse 1.5s infinite;
 }
 
+@keyframes pulse{
 
-@keyframes pulse {
-
-    50% {
-        opacity: .4;
+    50%{
+        opacity:.4;
     }
 }
 
 
 /* =====================================================
-   COMEDY
+   POPUP
 ===================================================== */
 
-.comedy {
+.popup-overlay{
 
-    display: none;
+    position:fixed;
 
-    margin-top: 10px;
-
-    padding: 18px;
-
-    border-radius: 20px;
+    inset:0;
 
     background:
-        rgba(255,255,255,.06);
+        rgba(5,3,6,.72);
 
-    border:
-        1px solid
-        rgba(255,255,255,.08);
+    backdrop-filter:blur(7px);
 
-    animation:
-        appear .5s;
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:20px;
+
+    z-index:100;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s;
 }
 
+.popup-overlay.show{
 
-.comedy .emoji {
+    opacity:1;
 
-    font-size: 38px;
-
-    display: block;
-
-    margin-bottom: 8px;
+    visibility:visible;
 }
 
+.popup{
 
-.comedy p {
+    width:min(430px,100%);
 
-    color: #f0c5d0;
+    background:
+        linear-gradient(
+            145deg,
+            #35141f,
+            #1d0d15
+        );
 
-    line-height: 1.8;
+    border:1px solid rgba(255,190,210,.25);
 
-    font-size: 15px;
+    border-radius:28px;
+
+    padding:32px 25px 27px;
+
+    text-align:center;
+
+    box-shadow:
+        0 30px 90px rgba(0,0,0,.6),
+        0 0 40px rgba(220,70,110,.12);
+
+    transform:scale(.8) translateY(20px);
+
+    transition:.35s;
 }
 
+.popup-overlay.show .popup{
 
-.comedy button {
+    transform:scale(1) translateY(0);
+}
 
-    margin-top: 15px;
+.popup-emoji{
+
+    font-size:55px;
+
+    display:block;
+
+    margin-bottom:12px;
+
+    animation:popupEmoji 1s ease;
+}
+
+@keyframes popupEmoji{
+
+    0%{
+        transform:scale(.3) rotate(-20deg);
+    }
+
+    70%{
+        transform:scale(1.15) rotate(5deg);
+    }
+
+    100%{
+        transform:scale(1) rotate(0);
+    }
+}
+
+.popup-text{
+
+    color:#f5d8df;
+
+    line-height:2;
+
+    font-size:16px;
+
+    margin-bottom:22px;
 }
 
 
@@ -489,11 +478,9 @@ body::before {
    BUTTON
 ===================================================== */
 
-.btn {
+.btn{
 
-    border:
-        1px solid
-        rgba(255,180,200,.45);
+    border:1px solid rgba(255,180,200,.45);
 
     background:
         linear-gradient(
@@ -502,80 +489,62 @@ body::before {
             #c24b70
         );
 
-    color: white;
+    color:white;
 
-    padding:
-        12px 24px;
+    padding:12px 25px;
 
-    border-radius: 50px;
+    border-radius:50px;
 
-    font-family:
-        inherit;
+    font-family:inherit;
 
-    font-size: 14px;
+    font-size:14px;
 
-    cursor: pointer;
+    cursor:pointer;
 
     box-shadow:
-        0 8px 25px
-        rgba(0,0,0,.3);
+        0 8px 25px rgba(0,0,0,.3);
 
-    transition:
-        .25s;
+    transition:.25s;
 }
 
+.btn:hover{
 
-.btn:hover {
-
-    transform:
-        translateY(-3px);
+    transform:translateY(-3px);
 
     box-shadow:
         0 12px 30px
         rgba(194,75,112,.35);
 }
 
+.btn:active{
 
-.btn:active {
-
-    transform:
-        scale(.95);
+    transform:scale(.95);
 }
 
 
 /* =====================================================
-   CARD AREA
+   CARD WRAPPER
 ===================================================== */
 
-.card-wrapper {
+.card-wrapper{
 
-    display: none;
+    display:none;
 
-    perspective: 1500px;
+    width:100%;
 
-    animation:
-        cardAppear 1s ease forwards;
+    animation:cardAppear 1s ease forwards;
 }
 
+@keyframes cardAppear{
 
-@keyframes cardAppear {
-
-    from {
-
-        opacity: 0;
-
-        transform:
-            translateY(60px)
-            scale(.85);
+    from{
+        opacity:0;
+        transform:translateY(50px) scale(.88);
     }
 
-    to {
-
-        opacity: 1;
-
-        transform:
-            translateY(0)
-            scale(1);
+    to{
+        opacity:1;
+        transform:translateY(0) scale(1);
     }
 }
 
@@ -584,85 +553,117 @@ body::before {
    GREETING CARD
 ===================================================== */
 
-.greeting-card {
+.greeting-card{
 
-    width: 100%;
+    width:100%;
 
-    max-width: 580px;
+    max-width:590px;
 
-    min-height: 650px;
+    min-height:720px;
 
-    margin: auto;
+    margin:auto;
 
-    position: relative;
+    position:relative;
 
-    overflow: hidden;
+    overflow:hidden;
 
-    border-radius: 28px;
+    border-radius:30px;
 
     background:
 
         radial-gradient(
-            circle at 50% 20%,
-            #fffdf8 0%,
+            circle at 50% 25%,
+            #fffefa 0%,
             #fff7ed 55%,
-            #f8e7d7 100%
+            #f4dfcd 100%
         );
 
-    color: #542b35;
+    color:#542b35;
 
-    border:
-        2px solid
-        #d5ad6d;
+    border:2px solid #d5ad6d;
 
     box-shadow:
+        0 30px 90px rgba(0,0,0,.55),
+        inset 0 0 0 8px rgba(213,173,109,.12);
 
-        0 30px 80px
-        rgba(0,0,0,.55),
+    padding:42px 28px 45px;
 
-        inset
-        0 0 0 8px
-        rgba(213,173,109,.12);
+    display:flex;
 
-    padding:
-        35px 25px 28px;
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:flex-start;
 }
 
 
 /* =====================================================
-   CARD DECORATIONS
+   CARD DECORATION
 ===================================================== */
 
-.card-corner {
+.card-corner{
 
-    position: absolute;
+    position:absolute;
 
-    font-size: 50px;
+    font-size:50px;
 
-    color: #c79652;
+    color:#c79652;
 
-    opacity: .5;
+    opacity:.45;
 }
 
-
-.corner-top-left {
-    top: 10px;
-    left: 15px;
+.corner-top-left{
+    top:10px;
+    left:15px;
 }
 
-.corner-top-right {
-    top: 10px;
-    right: 15px;
+.corner-top-right{
+    top:10px;
+    right:15px;
 }
 
-.corner-bottom-left {
-    bottom: 5px;
-    left: 15px;
+.corner-bottom-left{
+    bottom:10px;
+    left:15px;
 }
 
-.corner-bottom-right {
-    bottom: 5px;
-    right: 15px;
+.corner-bottom-right{
+    bottom:10px;
+    right:15px;
+}
+
+.flower{
+
+    position:absolute;
+
+    color:#d69aab;
+
+    opacity:.45;
+
+    font-size:25px;
+}
+
+.flower-1{
+    left:35px;
+    top:230px;
+}
+
+.flower-2{
+    right:35px;
+    top:250px;
+}
+
+.flower-3{
+    left:55px;
+    bottom:125px;
+    font-size:18px;
+}
+
+.flower-4{
+    right:55px;
+    bottom:135px;
+    font-size:18px;
 }
 
 
@@ -670,54 +671,44 @@ body::before {
    CARD HEADER
 ===================================================== */
 
-.card-small-title {
+.card-small-title{
 
-    font-size: 12px;
+    font-size:11px;
 
-    letter-spacing: 3px;
+    letter-spacing:3px;
 
-    color: #b28348;
+    color:#b28348;
 
-    margin-bottom: 5px;
+    margin-bottom:5px;
 }
 
+.card-title{
 
-.card-title {
+    font-family:"Playfair Display",serif;
 
-    font-family:
-        "Playfair Display",
-        serif;
+    font-size:30px;
 
-    font-size: 29px;
+    color:#7d3048;
 
-    color: #7d3048;
-
-    margin-bottom: 4px;
+    margin-bottom:3px;
 }
 
+.card-subtitle{
 
-.card-subtitle {
+    font-size:13px;
 
-    font-size: 13px;
+    color:#a87882;
 
-    color: #a87882;
-
-    margin-bottom: 5px;
+    margin-bottom:3px;
 }
 
+.decor-line{
 
-/* =====================================================
-   DECORATIVE LINE
-===================================================== */
+    width:130px;
 
-.decor-line {
+    height:2px;
 
-    width: 120px;
-
-    height: 2px;
-
-    margin:
-        12px auto 8px;
+    margin:14px auto 5px;
 
     background:
         linear-gradient(
@@ -727,30 +718,27 @@ body::before {
             transparent
         );
 
-    position: relative;
+    position:relative;
 }
 
+.decor-line::after{
 
-.decor-line::after {
+    content:"♥";
 
-    content: "♥";
+    position:absolute;
 
-    position: absolute;
+    left:50%;
+    top:50%;
 
-    left: 50%;
+    transform:translate(-50%,-50%);
 
-    top: 50%;
+    background:#fff8ef;
 
-    transform:
-        translate(-50%,-50%);
+    color:#b35b72;
 
-    background: #fff8ef;
+    padding:0 8px;
 
-    color: #b35b72;
-
-    padding: 0 8px;
-
-    font-size: 12px;
+    font-size:12px;
 }
 
 
@@ -758,15 +746,17 @@ body::before {
    MAWLID BRIDE
 ===================================================== */
 
-.mawlid-bride {
+.mawlid-bride{
 
-    width: 230px;
-    height: 315px;
+    width:250px;
 
-    margin:
-        5px auto -5px;
+    height:355px;
 
-    position: relative;
+    position:relative;
+
+    flex-shrink:0;
+
+    margin:4px auto 3px;
 
     animation:
         brideFloat 3.5s ease-in-out infinite;
@@ -778,386 +768,25 @@ body::before {
         );
 }
 
-.bride-svg {
+.bride-svg{
 
-    width: 100%;
-    height: 100%;
+    width:100%;
+    height:100%;
 
-    display: block;
+    display:block;
 
-    overflow: visible;
+    overflow:visible;
 }
 
+@keyframes brideFloat{
 
-@keyframes brideFloat {
-
-    0%,100% {
-
-        transform:
-            translateY(0)
-            rotate(-1deg);
+    0%,100%{
+        transform:translateY(0) rotate(-1deg);
     }
 
-    50% {
-
-        transform:
-            translateY(-8px)
-            rotate(1deg);
+    50%{
+        transform:translateY(-7px) rotate(1deg);
     }
-}
-
-
-/* =====================================================
-   CROWN
-===================================================== */
-
-.bride-crown {
-
-    position: absolute;
-
-    top: 0;
-
-    left: 69px;
-
-    z-index: 9;
-
-    font-size: 32px;
-
-    filter:
-        drop-shadow(
-            0 0 6px
-            rgba(255,190,60,.6)
-        );
-}
-
-
-/* =====================================================
-   HAIR
-===================================================== */
-
-.bride-hair {
-
-    position: absolute;
-
-    width: 82px;
-
-    height: 80px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #26171b,
-            #5a2a34
-        );
-
-    border-radius: 50%;
-
-    top: 19px;
-
-    left: 54px;
-
-    z-index: 3;
-}
-
-
-.bride-hair::after {
-
-    content: "";
-
-    position: absolute;
-
-    width: 28px;
-
-    height: 65px;
-
-    background: #29171c;
-
-    right: -11px;
-
-    top: 31px;
-
-    border-radius:
-        0 20px 20px 20px;
-}
-
-
-/* =====================================================
-   FACE
-===================================================== */
-
-.bride-head {
-
-    position: absolute;
-
-    width: 68px;
-
-    height: 72px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #f9d4b7,
-            #efb893
-        );
-
-    border-radius: 50%;
-
-    top: 27px;
-
-    left: 61px;
-
-    z-index: 4;
-
-    border:
-        2px solid
-        rgba(80,30,30,.1);
-}
-
-
-.bride-eye {
-
-    position: absolute;
-
-    width: 6px;
-
-    height: 8px;
-
-    background: #351b22;
-
-    border-radius: 50%;
-
-    top: 48px;
-}
-
-
-.eye-left {
-    left: 17px;
-}
-
-
-.eye-right {
-    right: 17px;
-}
-
-
-.bride-smile {
-
-    position: absolute;
-
-    width: 20px;
-
-    height: 10px;
-
-    border-bottom:
-        3px solid #9e4058;
-
-    border-radius: 50%;
-
-    left: 24px;
-
-    top: 57px;
-}
-
-
-/* =====================================================
-   DRESS
-===================================================== */
-
-.bride-dress {
-
-    position: absolute;
-
-    width: 170px;
-
-    height: 150px;
-
-    left: 10px;
-
-    top: 91px;
-
-    background:
-
-        linear-gradient(
-            90deg,
-            #9e2850,
-            #d95579 25%,
-            #f3a5b9 50%,
-            #d95579 75%,
-            #9e2850
-        );
-
-    clip-path:
-        polygon(
-            35% 0,
-            65% 0,
-            78% 16%,
-            100% 100%,
-            0 100%,
-            22% 16%
-        );
-
-    z-index: 2;
-
-    box-shadow:
-        0 12px 25px
-        rgba(100,30,50,.3);
-}
-
-
-/* Dress Details */
-
-.bride-dress::before {
-
-    content:
-        "✦  ✦  ✦";
-
-    position: absolute;
-
-    top: 50px;
-
-    width: 100%;
-
-    text-align: center;
-
-    color: #ffeab3;
-
-    font-size: 19px;
-
-    letter-spacing: 5px;
-}
-
-
-.bride-dress::after {
-
-    content: "";
-
-    position: absolute;
-
-    bottom: 14px;
-
-    left: 18px;
-
-    right: 18px;
-
-    height: 4px;
-
-    background:
-        #ffe5a7;
-
-    box-shadow:
-
-        0 -12px 0
-        rgba(255,230,170,.45),
-
-        0 12px 0
-        rgba(255,230,170,.45);
-}
-
-
-/* =====================================================
-   ARMS
-===================================================== */
-
-.bride-arm {
-
-    position: absolute;
-
-    width: 58px;
-
-    height: 18px;
-
-    background: #f6c7a8;
-
-    border-radius: 20px;
-
-    top: 118px;
-
-    z-index: 6;
-}
-
-
-.arm-left {
-
-    left: 0;
-
-    transform:
-        rotate(35deg);
-}
-
-
-.arm-right {
-
-    right: 0;
-
-    transform:
-        rotate(-35deg);
-}
-
-
-/* =====================================================
-   HEART
-===================================================== */
-
-.bride-heart {
-
-    position: absolute;
-
-    z-index: 10;
-
-    font-size: 30px;
-
-    top: 107px;
-
-    left: 81px;
-
-    animation:
-        heartPulse 1.4s infinite;
-}
-
-
-@keyframes heartPulse {
-
-    0%,100% {
-        transform:
-            scale(1);
-    }
-
-    50% {
-        transform:
-            scale(1.18);
-    }
-}
-
-
-/* =====================================================
-   BASE
-===================================================== */
-
-.bride-base {
-
-    position: absolute;
-
-    width: 140px;
-
-    height: 18px;
-
-    left: 25px;
-
-    bottom: 4px;
-
-    border-radius: 50%;
-
-    background:
-        linear-gradient(
-            90deg,
-            #9f6d20,
-            #e7c16a,
-            #9f6d20
-        );
-
-    box-shadow:
-        0 5px 15px
-        rgba(0,0,0,.25);
 }
 
 
@@ -1165,31 +794,44 @@ body::before {
    MESSAGE
 ===================================================== */
 
-.main-message {
+.main-message{
 
-    font-size: 23px;
+    width:100%;
 
-    line-height: 2;
+    max-width:500px;
 
-    color: #63313e;
+    font-size:23px;
 
-    margin-top: -2px;
+    line-height:2;
 
-    margin-bottom: 10px;
+    color:#63313e;
 
-    transition:
-        opacity .25s,
-        transform .25s;
+    text-align:center;
+
+    margin-top:0;
+
+    margin-bottom:15px;
+
+    min-height:92px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-direction:column;
+
+    transition:.3s;
 }
 
+.translation{
 
-.translation {
+    font-size:12px;
 
-    font-size: 12px;
+    color:#b07c87;
 
-    color: #b07c87;
-
-    margin-bottom: 15px;
+    margin-bottom:16px;
 }
 
 
@@ -1197,134 +839,65 @@ body::before {
    LANGUAGE BUTTON
 ===================================================== */
 
-.language-btn {
+.language-btn{
 
-    background:
-        transparent;
+    background:transparent;
 
-    border:
-        1px solid
-        #c99b66;
+    border:1px solid #c99b66;
 
-    color:
-        #8e4c5d;
+    color:#8e4c5d;
 
-    padding:
-        9px 19px;
+    padding:9px 20px;
 
-    border-radius: 30px;
+    border-radius:30px;
 
-    font-family:
-        inherit;
+    font-family:inherit;
 
-    font-size: 12px;
+    font-size:12px;
 
-    cursor: pointer;
+    cursor:pointer;
 
-    transition: .25s;
+    transition:.25s;
+
+    flex-shrink:0;
 }
 
+.language-btn:hover{
 
-.language-btn:hover {
+    background:#8e4c5d;
 
-    background:
-        #8e4c5d;
+    color:white;
 
-    color: white;
-
-    transform:
-        translateY(-2px);
+    transform:translateY(-2px);
 }
 
 
 /* =====================================================
-   CARD FOOTER
+   FOOTER SPACE
 ===================================================== */
 
-.card-footer {
+.card-footer-space{
 
-    margin-top: 17px;
+    flex:1;
 
-    font-family:
-        "Playfair Display",
-        serif;
-
-    font-size: 15px;
-
-    color: #9e6671;
+    min-height:35px;
 }
 
+.card-footer{
 
-.card-footer span {
+    margin-top:18px;
 
-    color: #b34d6c;
+    font-family:"Playfair Display",serif;
+
+    font-size:14px;
+
+    color:#9e6671;
+
+    padding-top:12px;
 }
 
-
-/* =====================================================
-   CARD FLOWERS
-===================================================== */
-
-.flower {
-
-    position: absolute;
-
-    color: #d69aab;
-
-    opacity: .5;
-
-    font-size: 25px;
-}
-
-
-.flower-1 {
-    left: 35px;
-    top: 180px;
-    transform: rotate(-20deg);
-}
-
-.flower-2 {
-    right: 35px;
-    top: 200px;
-    transform: rotate(20deg);
-}
-
-.flower-3 {
-    left: 55px;
-    bottom: 100px;
-    font-size: 18px;
-}
-
-.flower-4 {
-    right: 55px;
-    bottom: 110px;
-    font-size: 18px;
-}
-
-
-/* =====================================================
-   APPEAR
-===================================================== */
-
-@keyframes appear {
-
-    from {
-
-        opacity: 0;
-
-        transform:
-            scale(.85)
-            translateY(20px);
-    }
-
-    to {
-
-        opacity: 1;
-
-        transform:
-            scale(1)
-            translateY(0);
-    }
+.card-footer span{
+    color:#b34d6c;
 }
 
 
@@ -1332,63 +905,53 @@ body::before {
    BROKEN LOCK
 ===================================================== */
 
-.broken .lock-shackle {
+.broken .lock-shackle{
 
     animation:
         breakShackle .8s forwards;
 }
 
-
-.broken .lock-body {
+.broken .lock-body{
 
     animation:
         breakBody .8s forwards;
 }
 
+@keyframes breakShackle{
 
-@keyframes breakShackle {
-
-    0% {
-        transform:
-            rotate(0);
+    0%{
+        transform:rotate(0);
     }
 
-    40% {
-        transform:
-            rotate(-10deg)
-            scale(1.1);
+    40%{
+        transform:rotate(-10deg) scale(1.1);
     }
 
-    100% {
-
+    100%{
         transform:
             translate(-100px,-80px)
             rotate(-45deg);
 
-        opacity: 0;
+        opacity:0;
     }
 }
 
+@keyframes breakBody{
 
-@keyframes breakBody {
-
-    0% {
-        transform:
-            scale(1);
+    0%{
+        transform:scale(1);
     }
 
-    30% {
-        transform:
-            scale(1.15);
+    30%{
+        transform:scale(1.15);
     }
 
-    100% {
-
+    100%{
         transform:
             translate(100px,80px)
             rotate(35deg);
 
-        opacity: 0;
+        opacity:0;
     }
 }
 
@@ -1397,31 +960,29 @@ body::before {
    FLASH
 ===================================================== */
 
-.flash {
+.flash{
 
-    position: fixed;
+    position:fixed;
 
-    inset: 0;
+    inset:0;
 
-    background: white;
+    background:white;
 
-    z-index: 30;
+    z-index:150;
 
-    pointer-events: none;
+    pointer-events:none;
 
-    animation:
-        flash .5s forwards;
+    animation:flash .5s forwards;
 }
 
+@keyframes flash{
 
-@keyframes flash {
-
-    0% {
-        opacity: .9;
+    0%{
+        opacity:.9;
     }
 
-    100% {
-        opacity: 0;
+    100%{
+        opacity:0;
     }
 }
 
@@ -1430,32 +991,28 @@ body::before {
    CONFETTI
 ===================================================== */
 
-.confetti {
+.confetti{
 
-    position: fixed;
+    position:fixed;
 
-    width: 8px;
+    width:8px;
+    height:14px;
 
-    height: 14px;
+    top:-20px;
 
-    top: -20px;
+    z-index:120;
 
-    z-index: 20;
-
-    animation:
-        fall linear forwards;
+    animation:fall linear forwards;
 }
 
+@keyframes fall{
 
-@keyframes fall {
-
-    to {
-
+    to{
         transform:
             translateY(110vh)
             rotate(720deg);
 
-        opacity: 0;
+        opacity:0;
     }
 }
 
@@ -1464,34 +1021,30 @@ body::before {
    HEARTS
 ===================================================== */
 
-.flying-heart {
+.flying-heart{
 
-    position: fixed;
+    position:fixed;
 
-    pointer-events: none;
+    pointer-events:none;
 
-    z-index: 15;
+    z-index:125;
 
-    font-size: 25px;
+    font-size:25px;
 
-    animation:
-        flyHeart 2.5s ease-out forwards;
+    animation:flyHeart 2.5s ease-out forwards;
 }
 
+@keyframes flyHeart{
 
-@keyframes flyHeart {
-
-    0% {
-
+    0%{
         transform:
             translate(0,0)
             scale(.5);
 
-        opacity: 1;
+        opacity:1;
     }
 
-    100% {
-
+    100%{
         transform:
             translate(
                 calc((var(--x) - .5) * 500px),
@@ -1499,7 +1052,7 @@ body::before {
             )
             scale(1.5);
 
-        opacity: 0;
+        opacity:0;
     }
 }
 
@@ -1508,59 +1061,206 @@ body::before {
    MOBILE
 ===================================================== */
 
-@media(max-width:600px) {
+@media(max-width:600px){
 
-    .container {
-        width: 94%;
+    body{
+
+        padding:12px;
+
+        align-items:center;
     }
 
-
-    .intro h1 {
-        font-size: 27px;
+    .container{
+        width:100%;
     }
 
-
-    .lock-area {
-        height: 270px;
+    .intro h1{
+        font-size:26px;
     }
 
+    .intro p{
+        font-size:13px;
+    }
 
-    .greeting-card {
+    .lock-area{
+        height:245px;
+    }
 
-        min-height: 610px;
+    .popup{
+        padding:28px 20px 24px;
+    }
+
+    .popup-text{
+        font-size:14px;
+    }
+
+    .greeting-card{
+
+        min-height:680px;
+
+        height:auto;
 
         padding:
-            25px 15px 20px;
+            30px 15px
+            38px;
 
-        border-radius: 24px;
+        border-radius:25px;
     }
 
-
-    .card-title {
-        font-size: 25px;
+    .card-small-title{
+        font-size:10px;
     }
 
-
-    .mawlid-bride {
-
-        width: 200px;
-        height: 285px;
-
-        margin-top: -5px;
-        margin-bottom: -10px;
+    .card-title{
+        font-size:24px;
     }
 
-
-    .main-message {
-
-        font-size: 19px;
-
-        line-height: 1.9;
+    .card-subtitle{
+        font-size:12px;
     }
 
+    .decor-line{
+        margin-top:11px;
+    }
 
-    .flower {
-        display: none;
+    .mawlid-bride{
+
+        width:210px;
+
+        height:300px;
+
+        margin-top:0;
+
+        margin-bottom:2px;
+    }
+
+    .main-message{
+
+        font-size:19px;
+
+        line-height:1.9;
+
+        min-height:90px;
+
+        padding:0 5px;
+    }
+
+    .language-btn{
+
+        font-size:11px;
+
+        padding:9px 17px;
+    }
+
+    .card-footer-space{
+        min-height:28px;
+    }
+
+    .card-footer{
+        margin-top:15px;
+        font-size:13px;
+    }
+
+    .flower{
+        display:none;
+    }
+
+    .card-corner{
+        font-size:38px;
+    }
+
+    .corner-top-left{
+        left:8px;
+        top:5px;
+    }
+
+    .corner-top-right{
+        right:8px;
+        top:5px;
+    }
+
+    .corner-bottom-left{
+        left:8px;
+        bottom:5px;
+    }
+
+    .corner-bottom-right{
+        right:8px;
+        bottom:5px;
+    }
+}
+
+
+/* =====================================================
+   SMALL PHONES
+===================================================== */
+
+@media(max-width:380px){
+
+    body{
+        padding:8px;
+    }
+
+    .greeting-card{
+
+        min-height:630px;
+
+        padding:
+            25px 10px
+            30px;
+    }
+
+    .card-title{
+        font-size:22px;
+    }
+
+    .mawlid-bride{
+
+        width:185px;
+
+        height:265px;
+    }
+
+    .main-message{
+
+        font-size:17px;
+
+        line-height:1.8;
+    }
+
+    .card-footer-space{
+        min-height:20px;
+    }
+}
+
+
+/* =====================================================
+   SHORT SCREEN
+===================================================== */
+
+@media(max-height:750px){
+
+    .greeting-card{
+
+        min-height:650px;
+
+        padding-top:25px;
+
+        padding-bottom:30px;
+    }
+
+    .mawlid-bride{
+
+        width:190px;
+
+        height:270px;
+    }
+
+    .main-message{
+
+        font-size:18px;
+
+        min-height:75px;
     }
 }
 
@@ -1568,130 +1268,62 @@ body::before {
 
 </head>
 
-
 <body>
 
-
-<!-- =====================================================
-     BACKGROUND
-===================================================== -->
-
 <div class="bg-heart h1">♥</div>
-
 <div class="bg-heart h2">♥</div>
-
 <div class="bg-heart h3">♥</div>
-
 <div class="bg-heart h4">♥</div>
 
-
 <div class="container">
-
 
 <!-- =====================================================
      INTRO
 ===================================================== -->
 
-<div
-    class="intro"
-    id="intro"
->
+<div class="intro" id="intro">
 
-    <h1>
-        في حاجة مستنياكي ❤️
-    </h1>
+```
+<h1>
+    في حاجة مستنياكي ❤️
+</h1>
 
-    <p>
-        بس للأسف… مش هينفع أديهالك بسهولة 😜
-    </p>
+<p>
+    بس للأسف… مش هينفع أديهالك بسهولة 😜
+</p>
+```
 
 </div>
 
-
-<!-- =====================================================
-     ATTEMPT
-===================================================== -->
-
-<div
-    class="attempt"
-    id="attempt"
->
+<div class="attempt" id="attempt">
     المحاولة 1 من 3
 </div>
-
 
 <!-- =====================================================
      LOCK
 ===================================================== -->
 
+<div class="lock-area" id="lockArea">
+
+```
 <div
-    class="lock-area"
-    id="lockArea"
+    class="lock"
+    id="lock"
+    onclick="hitLock()"
 >
 
-    <div
-        class="lock"
-        id="lock"
-        onclick="hitLock()"
-    >
+    <div class="lock-shackle"></div>
 
-        <div
-            class="lock-shackle"
-        ></div>
+    <div class="lock-body"></div>
 
-        <div
-            class="lock-body"
-        ></div>
-
-    </div>
+</div>
+```
 
 </div>
 
-
-<!-- =====================================================
-     HINT
-===================================================== -->
-
-<div
-    class="hint"
-    id="hint"
->
+<div class="hint" id="hint">
     💥 دوسي على القفل جامد!
 </div>
-
-
-<!-- =====================================================
-     COMEDY
-===================================================== -->
-
-<div
-    class="comedy"
-    id="comedy"
->
-
-    <span
-        class="emoji"
-        id="comedyEmoji"
-    >
-        😂
-    </span>
-
-
-    <p
-        id="comedyText"
-    ></p>
-
-
-    <button
-        class="btn"
-        onclick="nextAttempt()"
-        id="nextBtn"
-    >
-        أحاول تاني 😤
-    </button>
-
-</div>
-
 
 <!-- =====================================================
      GREETING CARD
@@ -1702,80 +1334,53 @@ body::before {
     id="cardWrapper"
 >
 
-    <div
-        class="greeting-card"
-    >
+<div class="greeting-card">
+
+```
+<div class="card-corner corner-top-left">
+    ❦
+</div>
+
+<div class="card-corner corner-top-right">
+    ❦
+</div>
+
+<div class="card-corner corner-bottom-left">
+    ❦
+</div>
+
+<div class="card-corner corner-bottom-right">
+    ❦
+</div>
 
 
-        <!-- Corners -->
-
-        <div
-            class="card-corner corner-top-left"
-        >
-            ❦
-        </div>
-
-        <div
-            class="card-corner corner-top-right"
-        >
-            ❦
-        </div>
-
-        <div
-            class="card-corner corner-bottom-left"
-        >
-            ❦
-        </div>
-
-        <div
-            class="card-corner corner-bottom-right"
-        >
-            ❦
-        </div>
+<div class="flower flower-1">❀</div>
+<div class="flower flower-2">❀</div>
+<div class="flower flower-3">✿</div>
+<div class="flower flower-4">✿</div>
 
 
-        <!-- Flowers -->
-
-        <div class="flower flower-1">
-            ❀
-        </div>
-
-        <div class="flower flower-2">
-            ❀
-        </div>
-
-        <div class="flower flower-3">
-            ✿
-        </div>
-
-        <div class="flower flower-4">
-            ✿
-        </div>
+<div class="card-small-title">
+    A SPECIAL DAY
+</div>
 
 
-        <!-- Header -->
-
-        <div class="card-small-title">
-            A SPECIAL DAY
-        </div>
+<div class="card-title">
+    A little surprise for you ❤️
+</div>
 
 
-        <div class="card-title">
-           A little surprise for you ❤️
-        </div>
+<div class="card-subtitle">
+    To my bride
+</div>
 
 
-        <div class="card-subtitle">
-            To my bride
-        </div>
+<div class="decor-line"></div>
 
 
-        <div class="decor-line"></div>
-
-
-        <!-- =================================================
-             MAWLID BRIDE
-        ================================================== -->
+<!-- =================================================
+     MAWLID BRIDE
+================================================= -->
 
 <div class="mawlid-bride">
 
@@ -1785,7 +1390,8 @@ body::before {
         class="bride-svg"
     >
 
-        <!-- Soft shadow -->
+        <!-- Shadow -->
+
         <ellipse
             cx="150"
             cy="410"
@@ -1794,7 +1400,9 @@ body::before {
             fill="rgba(75,35,45,.15)"
         />
 
-        <!-- Dress outer silhouette -->
+
+        <!-- Dress -->
+
         <path
             d="
             M112 205
@@ -1808,7 +1416,6 @@ body::before {
             fill="#9d3154"
         />
 
-        <!-- Dress inner -->
         <path
             d="
             M128 205
@@ -1820,7 +1427,6 @@ body::before {
             fill="#d95d7b"
         />
 
-        <!-- Dress highlight -->
         <path
             d="
             M150 208
@@ -1833,7 +1439,9 @@ body::before {
             opacity=".8"
         />
 
-        <!-- Gold dress decoration -->
+
+        <!-- Gold dress -->
+
         <path
             d="
             M80 335
@@ -1854,7 +1462,9 @@ body::before {
             stroke-width="7"
         />
 
-        <!-- Golden ornaments -->
+
+        <!-- Ornaments -->
+
         <g
             fill="#f8d77d"
             opacity=".95"
@@ -1874,6 +1484,7 @@ body::before {
 
 
         <!-- Neck -->
+
         <rect
             x="136"
             y="174"
@@ -1884,7 +1495,8 @@ body::before {
         />
 
 
-        <!-- Hair behind head -->
+        <!-- Hair -->
+
         <path
             d="
             M95 95
@@ -1900,6 +1512,7 @@ body::before {
 
 
         <!-- Face -->
+
         <ellipse
             cx="150"
             cy="125"
@@ -1910,6 +1523,7 @@ body::before {
 
 
         <!-- Hair top -->
+
         <path
             d="
             M97 112
@@ -1924,6 +1538,7 @@ body::before {
 
 
         <!-- Eyes -->
+
         <ellipse
             cx="128"
             cy="126"
@@ -1940,8 +1555,6 @@ body::before {
             fill="#352027"
         />
 
-
-        <!-- Eye highlights -->
         <circle
             cx="130"
             cy="123"
@@ -1958,6 +1571,7 @@ body::before {
 
 
         <!-- Nose -->
+
         <path
             d="
             M150 130
@@ -1971,6 +1585,7 @@ body::before {
 
 
         <!-- Smile -->
+
         <path
             d="
             M136 157
@@ -1984,6 +1599,7 @@ body::before {
 
 
         <!-- Earrings -->
+
         <circle
             cx="95"
             cy="142"
@@ -1999,7 +1615,8 @@ body::before {
         />
 
 
-        <!-- Crown / traditional headpiece -->
+        <!-- Crown -->
+
         <path
             d="
             M91 73
@@ -2016,7 +1633,6 @@ body::before {
             stroke-width="5"
         />
 
-        <!-- Crown jewels -->
         <circle
             cx="150"
             cy="34"
@@ -2040,6 +1656,7 @@ body::before {
 
 
         <!-- Necklace -->
+
         <path
             d="
             M116 181
@@ -2058,7 +1675,8 @@ body::before {
         />
 
 
-        <!-- Left arm -->
+        <!-- Arms -->
+
         <path
             d="
             M105 220
@@ -2070,8 +1688,6 @@ body::before {
             stroke-linecap="round"
         />
 
-
-        <!-- Right arm -->
         <path
             d="
             M195 220
@@ -2085,6 +1701,7 @@ body::before {
 
 
         <!-- Heart -->
+
         <path
             d="
             M150 272
@@ -2097,7 +1714,6 @@ body::before {
             fill="#c43e62"
         />
 
-        <!-- Heart shine -->
         <path
             d="
             M121 280
@@ -2110,7 +1726,8 @@ body::before {
         />
 
 
-        <!-- Dress stars -->
+        <!-- Stars -->
+
         <g
             fill="#fff0bb"
             font-family="serif"
@@ -2148,54 +1765,93 @@ body::before {
 </div>
 
 
-        <!-- =================================================
-             MESSAGE
-        ================================================== -->
+<!-- =================================================
+     MESSAGE
+================================================= -->
 
-        <div
-            class="main-message"
-            id="mainMessage"
-            dir="ltr"
-        >
+<div
+    class="main-message"
+    id="mainMessage"
+    dir="ltr"
+>
 
-            운명은 나를 너와 만나게 했고
-            너는 내 인생에서 가장 아름다운 운명이 되었어 ❤️
+    운명은 나를 너와 만나게 했고
+    너는 내 인생에서 가장 아름다운 운명이 되었어 ❤️
 
-            <br>
+    <br>
 
-            생일 축하해, 언제나 나의 신부가 되어줘 🥰
-
-        </div>
-
-
-        <div
-            class="translation"
-            id="translation"
-        ></div>
-
-
-        <!-- Language Button -->
-
-        <button
-            class="language-btn"
-            id="languageBtn"
-            onclick="toggleLanguage()"
-        >
-            اضغطي هنا لو مش فاهمة بالكوري 😂
-        </button>
-
-
-        <!-- Footer -->
-
-
-
-    </div>
+    생일 축하해, 언제나 나의 신부가 되어줘 🥰
 
 </div>
 
 
+<div
+    class="translation"
+    id="translation"
+></div>
+
+
+<button
+    class="language-btn"
+    id="languageBtn"
+    onclick="toggleLanguage()"
+>
+    اضغطي هنا لو مش فاهمة بالكوري 😂
+</button>
+
+
+<!-- مساحة قبل الفوتر -->
+
+<div class="card-footer-space"></div>
+
+
+<div class="card-footer">
+    Made with love for <span>Reem ❤️</span>
+</div>
+```
+
 </div>
 
+</div>
+
+</div>
+
+<!-- =====================================================
+     POPUP
+===================================================== -->
+
+<div
+    class="popup-overlay"
+    id="popupOverlay"
+>
+
+```
+<div class="popup">
+
+    <span
+        class="popup-emoji"
+        id="popupEmoji"
+    >
+        😂
+    </span>
+
+    <div
+        class="popup-text"
+        id="popupText"
+    ></div>
+
+    <button
+        class="btn"
+        onclick="closePopup()"
+        id="popupButton"
+    >
+        أحاول تاني 😤
+    </button>
+
+</div>
+```
+
+</div>
 
 <script>
 
@@ -2217,14 +1873,11 @@ let korean = true;
 const lock =
     document.getElementById("lock");
 
-const comedy =
-    document.getElementById("comedy");
+const lockArea =
+    document.getElementById("lockArea");
 
-const comedyText =
-    document.getElementById("comedyText");
-
-const comedyEmoji =
-    document.getElementById("comedyEmoji");
+const intro =
+    document.getElementById("intro");
 
 const attemptText =
     document.getElementById("attempt");
@@ -2232,169 +1885,141 @@ const attemptText =
 const hint =
     document.getElementById("hint");
 
-const lockArea =
-    document.getElementById("lockArea");
-
-const intro =
-    document.getElementById("intro");
-
 const cardWrapper =
     document.getElementById("cardWrapper");
+
+const popupOverlay =
+    document.getElementById("popupOverlay");
+
+const popupEmoji =
+    document.getElementById("popupEmoji");
+
+const popupText =
+    document.getElementById("popupText");
+
+const popupButton =
+    document.getElementById("popupButton");
 
 const mainMessage =
     document.getElementById("mainMessage");
 
-const translation =
-    document.getElementById("translation");
-
 const languageBtn =
     document.getElementById("languageBtn");
+
+const translation =
+    document.getElementById("translation");
 
 
 /* =====================================================
    HIT LOCK
 ===================================================== */
 
-function hitLock() {
+function hitLock(){
 
-    if (locked)
+    if(locked)
         return;
-
 
     locked = true;
 
-
-    /* Restart Shake */
-
-    lock.classList.remove(
-        "shake"
-    );
+    lock.classList.remove("shake");
 
     void lock.offsetWidth;
 
-    lock.classList.add(
-        "shake"
-    );
+    lock.classList.add("shake");
 
 
-    setTimeout(() => {
+    setTimeout(()=>{
 
+        /* FIRST */
 
-        /* ==============================================
-           FIRST ATTEMPT
-        ============================================== */
+        if(attempt === 1){
 
-        if (attempt === 1) {
-
-            showComedy(
-
+            showPopup(
                 "😂",
-
                 `
                 إيه ده؟! 😭<br>
                 دي كانت محاولة ولا بتطبطبي عليه؟ 😂<br>
                 القفل حتى محسش بحاجة!
                 `
-
             );
 
         }
 
+        /* SECOND */
 
-        /* ==============================================
-           SECOND ATTEMPT
-        ============================================== */
+        else if(attempt === 2){
 
-        else if (attempt === 2) {
-
-            showComedy(
-
+            showPopup(
                 "😭💪",
-
                 `
                 لا لا لا… كده الموضوع خطر 😂<br>
                 شكلك مش بتاكلي كويس خالص!<br>
                 فين القوة يا بنتي؟ 😭💪
                 `
-
             );
 
         }
 
+        /* THIRD */
 
-        /* ==============================================
-           THIRD ATTEMPT
-        ============================================== */
-
-        else {
+        else{
 
             breakLock();
 
         }
 
-    }, 500);
+    },500);
 
 }
 
 
 /* =====================================================
-   COMEDY
+   SHOW POPUP
 ===================================================== */
 
-function showComedy(
+function showPopup(
     emoji,
     text
-) {
+){
 
-    comedyEmoji.innerHTML =
-        emoji;
+    popupEmoji.innerHTML = emoji;
 
-    comedyText.innerHTML =
-        text;
+    popupText.innerHTML = text;
 
-    comedy.style.display =
-        "block";
+    popupButton.innerHTML =
+        "أحاول تاني 😤";
 
-    hint.style.display =
-        "none";
+    popupOverlay.classList.add("show");
+
 }
 
 
 /* =====================================================
-   NEXT ATTEMPT
+   CLOSE POPUP
 ===================================================== */
 
-function nextAttempt() {
+function closePopup(){
+
+    popupOverlay.classList.remove("show");
 
     attempt++;
-
-
-    comedy.style.display =
-        "none";
-
 
     attemptText.innerText =
         "المحاولة " +
         attempt +
         " من 3";
 
-
-    hint.style.display =
-        "block";
-
-
     locked = false;
 
 
-    if (attempt === 2) {
+    if(attempt === 2){
 
         hint.innerHTML =
             "💥 المرة دي دوسي أقوى!";
 
     }
 
-
-    if (attempt === 3) {
+    else if(attempt === 3){
 
         hint.innerHTML =
             "💣 آخر فرصة… فجّريه يا ريم!";
@@ -2405,10 +2030,28 @@ function nextAttempt() {
 
 
 /* =====================================================
+   CLOSE POPUP WHEN CLICK OUTSIDE
+===================================================== */
+
+popupOverlay.addEventListener(
+    "click",
+    function(e){
+
+        if(e.target === popupOverlay){
+
+            closePopup();
+
+        }
+
+    }
+);
+
+
+/* =====================================================
    BREAK LOCK
 ===================================================== */
 
-function breakLock() {
+function breakLock(){
 
     locked = true;
 
@@ -2416,59 +2059,42 @@ function breakLock() {
     /* Flash */
 
     const flash =
-        document.createElement(
-            "div"
-        );
+        document.createElement("div");
 
-    flash.className =
-        "flash";
+    flash.className = "flash";
 
-    document.body.appendChild(
-        flash
-    );
+    document.body.appendChild(flash);
 
 
-    /* Break Lock */
+    /* Break */
 
-    lockArea.classList.add(
-        "broken"
-    );
+    lockArea.classList.add("broken");
 
 
-    hint.style.display =
-        "none";
+    hint.style.display = "none";
 
+    attemptText.style.display = "none";
 
-    attemptText.style.display =
-        "none";
+    intro.style.display = "none";
 
-
-    intro.style.display =
-        "none";
-
-
-    comedy.style.display =
-        "none";
-
-
-    /* Effects */
 
     createConfetti();
 
     createHearts();
 
 
-    /* Show Card */
+    setTimeout(()=>{
 
-    setTimeout(() => {
+        lockArea.style.display = "none";
 
-        lockArea.style.display =
-            "none";
+        cardWrapper.style.display = "block";
 
-        cardWrapper.style.display =
-            "block";
+        window.scrollTo({
+            top:0,
+            behavior:"smooth"
+        });
 
-    }, 850);
+    },850);
 
 }
 
@@ -2477,58 +2103,36 @@ function breakLock() {
    CONFETTI
 ===================================================== */
 
-function createConfetti() {
+function createConfetti(){
 
-    for (
-        let i = 0;
-        i < 120;
-        i++
-    ) {
+    for(let i=0;i<120;i++){
 
         const confetti =
-            document.createElement(
-                "div"
-            );
-
+            document.createElement("div");
 
         confetti.className =
             "confetti";
 
-
         confetti.style.left =
-            Math.random() * 100 +
-            "vw";
-
+            Math.random()*100+"vw";
 
         confetti.style.animationDuration =
-            (
-                2 +
-                Math.random() * 3
-            ) +
-            "s";
-
+            (2+Math.random()*3)+"s";
 
         confetti.style.animationDelay =
-            Math.random() * 1.5 +
-            "s";
-
+            Math.random()*1.5+"s";
 
         confetti.style.transform =
-            `rotate(
-                ${Math.random() * 360}deg
-            )`;
+            `rotate(${Math.random()*360}deg)`;
+
+        document.body.appendChild(confetti);
 
 
-        document.body.appendChild(
-            confetti
-        );
-
-
-        setTimeout(() => {
+        setTimeout(()=>{
 
             confetti.remove();
 
-        }, 6000);
+        },6000);
 
     }
 
@@ -2539,35 +2143,25 @@ function createConfetti() {
    HEARTS
 ===================================================== */
 
-function createHearts() {
+function createHearts(){
 
     const hearts = [
-
         "❤️",
         "💗",
         "💖",
         "💕",
         "💞",
         "✨"
-
     ];
 
 
-    for (
-        let i = 0;
-        i < 45;
-        i++
-    ) {
+    for(let i=0;i<45;i++){
 
         const heart =
-            document.createElement(
-                "div"
-            );
-
+            document.createElement("div");
 
         heart.className =
             "flying-heart";
-
 
         heart.innerHTML =
             hearts[
@@ -2577,36 +2171,26 @@ function createHearts() {
                 )
             ];
 
+        heart.style.left = "50%";
 
-        heart.style.left =
-            "50%";
-
-
-        heart.style.top =
-            "50%";
-
+        heart.style.top = "50%";
 
         heart.style.setProperty(
             "--x",
             Math.random()
         );
 
-
         heart.style.animationDelay =
-            Math.random() * .8 +
-            "s";
+            Math.random()*.8+"s";
+
+        document.body.appendChild(heart);
 
 
-        document.body.appendChild(
-            heart
-        );
-
-
-        setTimeout(() => {
+        setTimeout(()=>{
 
             heart.remove();
 
-        }, 3500);
+        },3500);
 
     }
 
@@ -2617,16 +2201,12 @@ function createHearts() {
    LANGUAGE TOGGLE
 ===================================================== */
 
-function toggleLanguage() {
+function toggleLanguage(){
 
     korean = !korean;
 
 
-    /* ==============================================
-       KOREAN
-    ============================================== */
-
-    if (korean) {
+    if(korean){
 
         mainMessage.innerHTML = `
 
@@ -2639,32 +2219,21 @@ function toggleLanguage() {
 
         `;
 
-
         mainMessage.setAttribute(
             "dir",
             "ltr"
         );
-
-
-        translation.innerHTML =
-            "";
-
 
         languageBtn.innerHTML =
             "اضغطي هنا لو مش فاهمة بالكوري 😂";
 
     }
 
-
-    /* ==============================================
-       ARABIC
-    ============================================== */
-
-    else {
+    else{
 
         mainMessage.innerHTML = `
 
-            جمعني القدر بكِ فكنتِ أجمل أقداري ❤️
+            جمعني القدر بكِ، فكنتِ أجمل أقداري ❤️
 
             <br>
 
@@ -2672,13 +2241,10 @@ function toggleLanguage() {
 
         `;
 
-
         mainMessage.setAttribute(
             "dir",
             "rtl"
         );
-
-
 
         languageBtn.innerHTML =
             "نرجع للكوري تاني 🇰🇷😂";
@@ -2690,5 +2256,4 @@ function toggleLanguage() {
 </script>
 
 </body>
-
 </html>
