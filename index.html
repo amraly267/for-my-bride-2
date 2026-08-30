@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar" dir="auto">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>إلى عروستي ❤️</title>
+<title>A little surprise for you ❤️</title>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
@@ -402,10 +402,10 @@ body::before{
     margin-bottom:16px;
 }
 
-.language-btn{
-    background:transparent;
+/* .language-btn{
+    background:#8e4c5d;
     border:1px solid #c99b66;
-    color:#8e4c5d;
+    color:white;
     padding:9px 20px;
     border-radius:30px;
     font-family:inherit;
@@ -418,18 +418,36 @@ body::before{
     background:#8e4c5d;
     color:white;
     transform:translateY(-2px);
+} */
+
+.language-btn{
+    border:1px solid rgba(255,180,200,.45);
+    background:linear-gradient(135deg,#8e284e,#c24b70);
+    color:white;
+    padding:12px 25px;
+    border-radius:50px;
+    font-family:inherit;
+    font-size:14px;
+    cursor:pointer;
+    box-shadow:0 8px 25px rgba(0,0,0,.3);
+    transition:.25s;
 }
 
-.card-footer-space{flex:1;min-height:35px}
+.language-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 30px rgba(194,75,112,.35);
+}
 
-.card-footer{
+/* .card-footer-space{flex:1;min-height:35px} */
+
+/* .card-footer{
     margin-top:18px;
     font-family:"Playfair Display",serif;
     font-size:14px;
     color:#9e6671;
     padding-top:12px;
-}
-.card-footer span{color:#b34d6c}
+} */
+/* .card-footer span{color:#b34d6c} */
 
 .broken .lock-shackle{animation:breakShackle .8s forwards}
 .broken .lock-body{animation:breakBody .8s forwards}
@@ -551,8 +569,8 @@ body::before{
     }
 
     .language-btn{font-size:11px;padding:9px 17px}
-    .card-footer-space{min-height:28px}
-    .card-footer{margin-top:15px;font-size:13px}
+    /* .card-footer-space{min-height:28px} */
+    /* .card-footer{margin-top:15px;font-size:13px} */
 
     .flower{display:none}
     .card-corner{font-size:38px}
@@ -591,7 +609,7 @@ body::before{
 
     .mawlid-bride img{width:195px}
     .main-message{font-size:17px;line-height:1.8}
-    .card-footer-space{min-height:20px}
+    /* .card-footer-space{min-height:20px} */
 }
 
 @media(max-height:750px){
@@ -705,9 +723,9 @@ body::before{
     اضغطي هنا لو مش فاهمة بالكوري 😂
 </button>
 
-<div class="card-footer-space"></div>
+<!-- <div class="card-footer-space"></div> -->
 
-<div class="card-footer"></div>
+<!-- <div class="card-footer"></div> -->
 
 </div>
 </div>
