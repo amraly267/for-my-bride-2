@@ -13,7 +13,11 @@
 
 *{box-sizing:border-box;margin:0;padding:0}
 
-html,body{width:100%;min-height: 100vh;overscroll-behavior: none;}
+html,body{
+    width:100%;
+    min-height:100vh;
+    overscroll-behavior:none;
+}
 
 body{
     min-height:100vh;
@@ -221,23 +225,24 @@ body::before{
 }
 
 .greeting-card{
-    width: 100%;
-    max-width: 590px;
-    height: auto; /* يجعل الارتفاع يتناسب تلقائياً مع المحتوى */
-    min-height: auto; /* إلغاء الحد الأدنى للارتفاع الثابت */
-    margin: auto;
-    position: relative;
-    overflow: hidden;
-    border-radius: 30px;
-    background: radial-gradient(circle at 50% 25%,#fffefa 0%,#fff7ed 55%,#f4dfcd 100%);
-    color: #542b35;
-    border: 2px solid #d5ad6d;
-    box-shadow: 0 30px 90px rgba(0,0,0,.55),inset 0 0 0 8px rgba(213,173,109,.12);
-    padding: 35px 25px 30px; /* تقليل المسافات الداخلية العلوي والسفلية */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    width:100%;
+    max-width:590px;
+    height:auto;
+    min-height:auto;
+    margin:auto;
+    position:relative;
+    overflow:hidden;
+    border-radius:30px;
+    background:
+        radial-gradient(circle at 50% 25%,#fffefa 0%,#fff7ed 55%,#f4dfcd 100%);
+    color:#542b35;
+    border:2px solid #d5ad6d;
+    box-shadow:0 30px 90px rgba(0,0,0,.55),inset 0 0 0 8px rgba(213,173,109,.12);
+    padding:35px 25px 30px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-start;
 }
 
 .card-corner{
@@ -272,7 +277,7 @@ body::before{
 .decor-line{
     width:130px;
     height:2px;
-    margin:14px auto 5px;
+    margin:12px auto 5px;
     background:linear-gradient(90deg,transparent,#c99b59,transparent);
     position:relative;
 }
@@ -289,15 +294,14 @@ body::before{
 
 /* =====================================================
    MAWLID BRIDE
-   نفس العروسة المستخرجة من الصورة المرفقة
 ===================================================== */
 
 .mawlid-bride{
     width:250px;
-    height:270px;
+    height:250px;
     position:relative;
     flex-shrink:0;
-    margin:8px auto 8px;
+    margin:8px auto 5px;
     animation:brideFloat 3.5s ease-in-out infinite;
     filter:drop-shadow(0 15px 15px rgba(90,35,50,.15));
     display:flex;
@@ -383,45 +387,27 @@ body::before{
 }
 
 .main-message{
-    width: 100%;
-    max-width: 500px;
-    font-size: 22px;
-    line-height: 1.8;
-    color: #63313e;
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 20px; /* مسافة متناسقة قبل الزرار */
-    min-height: auto; /* إلغاء الارتفاع الأدنى الثابت */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    transition: .3s;
+    width:100%;
+    max-width:500px;
+    font-size:22px;
+    line-height:1.8;
+    color:#63313e;
+    text-align:center;
+    margin-top:5px;
+    margin-bottom:20px;
+    min-height:auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    transition:.3s;
 }
 
 .translation{
     font-size:12px;
     color:#b07c87;
-    margin-bottom:16px;
+    margin-bottom:10px;
 }
-
-/* .language-btn{
-    background:#8e4c5d;
-    border:1px solid #c99b66;
-    color:white;
-    padding:9px 20px;
-    border-radius:30px;
-    font-family:inherit;
-    font-size:12px;
-    cursor:pointer;
-    transition:.25s;
-    flex-shrink:0;
-}
-.language-btn:hover{
-    background:#8e4c5d;
-    color:white;
-    transform:translateY(-2px);
-} */
 
 .language-btn{
     border:1px solid rgba(255,180,200,.45);
@@ -440,17 +426,6 @@ body::before{
     transform:translateY(-3px);
     box-shadow:0 12px 30px rgba(194,75,112,.35);
 }
-
-/* .card-footer-space{flex:1;min-height:35px} */
-
-/* .card-footer{
-    margin-top:18px;
-    font-family:"Playfair Display",serif;
-    font-size:14px;
-    color:#9e6671;
-    padding-top:12px;
-} */
-/* .card-footer span{color:#b34d6c} */
 
 .broken .lock-shackle{animation:breakShackle .8s forwards}
 .broken .lock-body{animation:breakBody .8s forwards}
@@ -527,11 +502,11 @@ body::before{
     .popup{padding:28px 20px 24px}
     .popup-text{font-size:14px}
 
-    .greeting-card {
-        min-height: auto;
-        height: auto;
-        padding: 28px 15px 25px; /* مسافة متناسقة للشاشات الصغيرة */
-        border-radius: 25px;
+    .greeting-card{
+        min-height:auto;
+        height:auto;
+        padding:28px 15px 25px;
+        border-radius:25px;
     }
 
     .card-title{font-size:24px}
@@ -539,7 +514,7 @@ body::before{
 
     .mawlid-bride{
         width:210px;
-        height:245px;
+        height:220px;
         margin-top:0;
         margin-bottom:2px;
     }
@@ -566,14 +541,13 @@ body::before{
 
     .main-message{
         font-size:19px;
-        line-height:1.9;
-        min-height:90px;
+        line-height:1.8;
+        min-height:auto;
+        margin-bottom:15px;
         padding:0 5px;
     }
 
-    .language-btn{font-size:11px;padding:9px 17px}
-    /* .card-footer-space{min-height:28px} */
-    /* .card-footer{margin-top:15px;font-size:13px} */
+    .language-btn{font-size:12px;padding:10px 20px}
 
     .flower{display:none}
     .card-corner{font-size:38px}
@@ -586,13 +560,13 @@ body::before{
 @media(max-width:380px){
     body{padding:8px}
     .greeting-card{
-        min-height:630px;
-        padding:25px 10px 30px;
+        min-height:auto;
+        padding:22px 10px 22px;
     }
     .card-title{font-size:22px}
     .mawlid-bride{
         width:185px;
-        height:220px;
+        height:200px;
     }
     .bride-leg{
         height:38px;
@@ -611,41 +585,7 @@ body::before{
     .bride-shoe-right{right:65px}
 
     .mawlid-bride img{width:195px}
-    .main-message{font-size:17px;line-height:1.8}
-    /* .card-footer-space{min-height:20px} */
-}
-
-@media(max-height:750px){
-    .greeting-card{
-        min-height:650px;
-        padding-top:25px;
-        padding-bottom:30px;
-    }
-    .mawlid-bride{
-        width:190px;
-        height:220px;
-    }
-    .bride-leg{
-        height:38px;
-        width:13px;
-    }
-
-    .bride-leg-left{left:80px}
-    .bride-leg-right{right:80px}
-
-    .bride-shoe{
-        width:34px;
-        height:15px;
-    }
-
-    .bride-shoe-left{left:68px}
-    .bride-shoe-right{right:68px}
-
-    .mawlid-bride img{width:200px}
-    .main-message{
-        font-size:18px;
-        min-height:75px;
-    }
+    .main-message{font-size:17px;line-height:1.7;margin-bottom:15px}
 }
 </style>
 </head>
@@ -725,10 +665,6 @@ body::before{
 <button class="language-btn" id="languageBtn" onclick="toggleLanguage()">
     اضغطي هنا لو مش فاهمة بالكوري 😂
 </button>
-
-<!-- <div class="card-footer-space"></div> -->
-
-<!-- <div class="card-footer"></div> -->
 
 </div>
 </div>
