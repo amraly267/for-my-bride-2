@@ -13,7 +13,7 @@
 
 *{box-sizing:border-box;margin:0;padding:0}
 
-html,body{width:100%;min-height:100%}
+html,body{width:100%;min-height: 100vh;overscroll-behavior: none;}
 
 body{
     min-height:100vh;
@@ -221,23 +221,23 @@ body::before{
 }
 
 .greeting-card{
-    width:100%;
-    max-width:590px;
-    min-height:720px;
-    margin:auto;
-    position:relative;
-    overflow:hidden;
-    border-radius:30px;
-    background:
-        radial-gradient(circle at 50% 25%,#fffefa 0%,#fff7ed 55%,#f4dfcd 100%);
-    color:#542b35;
-    border:2px solid #d5ad6d;
-    box-shadow:0 30px 90px rgba(0,0,0,.55),inset 0 0 0 8px rgba(213,173,109,.12);
-    padding:42px 28px 45px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:flex-start;
+    width: 100%;
+    max-width: 590px;
+    height: auto; /* يجعل الارتفاع يتناسب تلقائياً مع المحتوى */
+    min-height: auto; /* إلغاء الحد الأدنى للارتفاع الثابت */
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    background: radial-gradient(circle at 50% 25%,#fffefa 0%,#fff7ed 55%,#f4dfcd 100%);
+    color: #542b35;
+    border: 2px solid #d5ad6d;
+    box-shadow: 0 30px 90px rgba(0,0,0,.55),inset 0 0 0 8px rgba(213,173,109,.12);
+    padding: 35px 25px 30px; /* تقليل المسافات الداخلية العلوي والسفلية */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .card-corner{
@@ -383,20 +383,20 @@ body::before{
 }
 
 .main-message{
-    width:100%;
-    max-width:500px;
-    font-size:23px;
-    line-height:2;
-    color:#63313e;
-    text-align:center;
-    margin-top:0;
-    margin-bottom:15px;
-    min-height:92px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    flex-direction:column;
-    transition:.3s;
+    width: 100%;
+    max-width: 500px;
+    font-size: 22px;
+    line-height: 1.8;
+    color: #63313e;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 20px; /* مسافة متناسقة قبل الزرار */
+    min-height: auto; /* إلغاء الارتفاع الأدنى الثابت */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: .3s;
 }
 
 .translation{
@@ -527,11 +527,11 @@ body::before{
     .popup{padding:28px 20px 24px}
     .popup-text{font-size:14px}
 
-    .greeting-card{
-        min-height:680px;
-        height:auto;
-        padding:30px 15px 38px;
-        border-radius:25px;
+    .greeting-card {
+        min-height: auto;
+        height: auto;
+        padding: 28px 15px 25px; /* مسافة متناسقة للشاشات الصغيرة */
+        border-radius: 25px;
     }
 
     .card-title{font-size:24px}
